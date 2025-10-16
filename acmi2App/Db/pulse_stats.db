@@ -1,0 +1,270 @@
+#############################################################
+#
+#       ACMI Pulse Statistics & Faults
+#
+#############################################################
+
+
+
+
+############# Waveform PV's (MSG ID 51) #########################
+
+record(ai,"$(P){ACMI:$(NO)}header-I") {
+    field(DESC, "Header")
+    field(DTYP, "PSC Reg")
+    field(INP , "@PSC$(NO) 51 0 ")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai,"$(P){ACMI:$(NO)}fpgaver-I") {
+    field(DESC, "FPGAVER")
+    field(DTYP, "PSC Reg")
+    field(INP , "@PSC$(NO) 51 4 ")
+    field(SCAN, "I/O Intr")
+}
+
+
+record(ai,"$(P){ACMI:$(NO)}BEAM:baseline-I") {
+    field(DESC, "Beam Info")
+    field(DTYP, "PSC Reg")
+    field(INP , "@PSC$(NO) 51 8 ")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai,"$(P){ACMI:$(NO)}BEAM:peak-I") {
+    field(DESC, "Beam Info")
+    field(DTYP, "PSC Reg")
+    field(INP , "@PSC$(NO) 51 12 ")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai,"$(P){ACMI:$(NO)}BEAM:integral-I") {
+    field(DESC, "Beam Info")
+    field(DTYP, "PSC Reg")
+    field(INP , "@PSC$(NO) 51 16 ")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai,"$(P){ACMI:$(NO)}BEAM:fwhm-I") {
+    field(DESC, "Beam Info")
+    field(DTYP, "PSC Reg")
+    field(INP , "@PSC$(NO) 51 20 ")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai,"$(P){ACMI:$(NO)}BEAM:peak-index-I") {
+    field(DESC, "Beam Info")
+    field(DTYP, "PSC Reg")
+    field(INP , "@PSC$(NO) 51 24")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai,"$(P){ACMI:$(NO)}TP1:baseline-I") {
+    field(DESC, "Test Pulse 1 Info")
+    field(DTYP, "PSC Reg")
+    field(INP , "@PSC$(NO) 51 28 ")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai,"$(P){ACMI:$(NO)}TP1:peak-I") {
+    field(DESC, "Test Pulse 1 Info")
+    field(DTYP, "PSC Reg")
+    field(INP , "@PSC$(NO) 51 32 ")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai,"$(P){ACMI:$(NO)}TP1:integral-I") {
+    field(DESC, "Test Pulse 1 Info")
+    field(DTYP, "PSC Reg")
+    field(INP , "@PSC$(NO) 51 36 ")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai,"$(P){ACMI:$(NO)}TP1:fwhm-I") {
+    field(DESC, "Test Pulse 1 Info")
+    field(DTYP, "PSC Reg")
+    field(INP , "@PSC$(NO) 51 40 ")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai,"$(P){ACMI:$(NO)}TP1:peak-index-I") {
+    field(DESC, "Test Pulse 1 Info")
+    field(DTYP, "PSC Reg")
+    field(INP , "@PSC$(NO) 51 44")
+    field(SCAN, "I/O Intr")
+}
+
+
+record(ai,"$(P){ACMI:$(NO)}TP2:baseline-I") {
+    field(DESC, "Test Pulse 2 Info")
+    field(DTYP, "PSC Reg")
+    field(INP , "@PSC$(NO) 51 48 ")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai,"$(P){ACMI:$(NO)}TP2:peak-I") {
+    field(DESC, "Test Pulse 2 Info")
+    field(DTYP, "PSC Reg")
+    field(INP , "@PSC$(NO) 51 52 ")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai,"$(P){ACMI:$(NO)}TP2:integral-I") {
+    field(DESC, "Test Pulse 2 Info")
+    field(DTYP, "PSC Reg")
+    field(INP , "@PSC$(NO) 51 56 ")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai,"$(P){ACMI:$(NO)}TP2:fwhm-I") {
+    field(DESC, "Test Pulse 2 Info")
+    field(DTYP, "PSC Reg")
+    field(INP , "@PSC$(NO) 51 60 ")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai,"$(P){ACMI:$(NO)}TP2:peak-index-I") {
+    field(DESC, "Test Pulse 2 Info")
+    field(DTYP, "PSC Reg")
+    field(INP , "@PSC$(NO) 51 64")
+    field(SCAN, "I/O Intr")
+}
+
+
+record(ai,"$(P){ACMI:$(NO)}TP3:baseline-I") {
+    field(DESC, "Test Pulse 3 Info")
+    field(DTYP, "PSC Reg")
+    field(INP , "@PSC$(NO) 51 68 ")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai,"$(P){ACMI:$(NO)}TP3:peak-I") {
+    field(DESC, "Test Pulse 3 Info")
+    field(DTYP, "PSC Reg")
+    field(INP , "@PSC$(NO) 51 72 ")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai,"$(P){ACMI:$(NO)}TP3:integral-I") {
+    field(DESC, "Test Pulse 3 Info")
+    field(DTYP, "PSC Reg")
+    field(INP , "@PSC$(NO) 51 76 ")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai,"$(P){ACMI:$(NO)}TP3:fwhm-I") {
+    field(DESC, "Test Pulse 3 Info")
+    field(DTYP, "PSC Reg")
+    field(INP , "@PSC$(NO) 51 80 ")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai,"$(P){ACMI:$(NO)}TP3:peak-index-I") {
+    field(DESC, "Test Pulse 3 Info")
+    field(DTYP, "PSC Reg")
+    field(INP , "@PSC$(NO) 51 84")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai,"$(P){ACMI:$(NO)}BEAMOOW:baseline-I") {
+    field(DESC, "Test Pulse 3 Info")
+    field(DTYP, "PSC Reg")
+    field(INP , "@PSC$(NO) 51 88 ")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai,"$(P){ACMI:$(NO)}BEAMOOW:peak-I") {
+    field(DESC, "Test Pulse 3 Info")
+    field(DTYP, "PSC Reg")
+    field(INP , "@PSC$(NO) 51 92 ")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai,"$(P){ACMI:$(NO)}BEAMOOW:integral-I") {
+    field(DESC, "Test Pulse 3 Info")
+    field(DTYP, "PSC Reg")
+    field(INP , "@PSC$(NO) 51 96 ")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai,"$(P){ACMI:$(NO)}BEAMOOW:fwhm-I") {
+    field(DESC, "Test Pulse 3 Info")
+    field(DTYP, "PSC Reg")
+    field(INP , "@PSC$(NO) 51 100 ")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai,"$(P){ACMI:$(NO)}BEAMOOW:peak-index-I") {
+    field(DESC, "Test Pulse 3 Info")
+    field(DTYP, "PSC Reg")
+    field(INP , "@PSC$(NO) 51 104")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai,"$(P){ACMI:$(NO)}faults_live-I") {
+    field(DESC, "Faults Live")
+    field(DTYP, "PSC Reg")
+    field(INP , "@PSC$(NO) 51 108")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai,"$(P){ACMI:$(NO)}faults_lat-I") {
+    field(DESC, "Faults Latched")
+    field(DTYP, "PSC Reg")
+    field(INP , "@PSC$(NO) 51 112")
+    field(SCAN, "I/O Intr")
+}
+
+
+record(ai,"$(P){ACMI:$(NO)}timestamp-I") {
+    field(DESC, "Timestamp")
+    field(DTYP, "PSC Reg")
+    field(INP , "@PSC$(NO) 51 116")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai,"$(P){ACMI:$(NO)}accum-I") {
+    field(DESC, "Accumulator")
+    field(DTYP, "PSC Reg")
+    field(INP , "@PSC$(NO) 51 120")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai,"$(P){ACMI:$(NO)}acis-I") {
+    field(DESC, "ACIS Readbacks")
+    field(DTYP, "PSC Reg")
+    field(INP , "@PSC$(NO) 51 124")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai,"$(P){ACMI:$(NO)}EEPROM:CRC-I") {
+    field(DESC, "ACIS Readbacks")
+    field(DTYP, "PSC Reg")
+    field(INP , "@PSC$(NO) 51 128")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai,"$(P){ACMI:$(NO)}faults_tp-I") {
+    field(DESC, "Faults TP")
+    field(DTYP, "PSC Reg")
+    field(INP , "@PSC$(NO) 51 132")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai,"$(P){ACMI:$(NO)}startup_cnt-I") {
+    field(DESC, "Startup Counter")
+    field(DTYP, "PSC Reg")
+    field(INP , "@PSC$(NO) 51 136")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai,"$(P){ACMI:$(NO)}beamaccum_limit_calc-I") {
+    field(DESC, "Faults TP")
+    field(DTYP, "PSC Reg")
+    field(INP , "@PSC$(NO) 51 140")
+    field(SCAN, "I/O Intr")
+}
+
+
+
+

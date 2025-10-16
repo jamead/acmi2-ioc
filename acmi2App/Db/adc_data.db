@@ -1,0 +1,38 @@
+#############################################################
+#
+#       ACMI ADC Waveforms
+#
+#############################################################
+
+
+
+
+#############################
+### Beam OOW Waveform 
+#############################
+record(waveform,"$(P){ACMI:$(NO)}beamOOW_wfvm-I") {
+    field(DTYP, "PSC Block I16 In")
+    field(INP , "@PSC$(NO) 53 0")
+    field(SCAN,"I/O Intr")
+    field(FTVL,"DOUBLE")
+    field(NELM,"128")     
+}
+
+
+
+
+#############################
+### ADC Waveform
+#############################
+record(waveform,"$(P){ACMI:$(NO)}ADC-Wfm") {
+    field(DTYP, "PSC Block I16 In")
+    field(INP , "@PSC$(NO) 54 0")
+    field(SCAN,"I/O Intr")
+    field(FTVL,"DOUBLE")
+    field(NELM,"16000")     
+}
+
+
+
+
+

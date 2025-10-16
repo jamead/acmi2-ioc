@@ -1,0 +1,73 @@
+#############################################################
+#
+#       ACMI Database for pscDrv IOC
+#      
+#
+#############################################################
+
+# Flush reg to socket buffer, trigger send to send all socket buffer to PSC 
+record(bo, "$(P){ACMI:$(NO)}send") { 
+    field(DTYP, "PSC Ctrl Send All") 
+    field(OUT , "@PSC$(NO)") 
+    field(ZNAM, "Send") 
+    field(ONAM, "Send") 
+} 
+ 
+# Write a single register
+record(longout, "$(P){ACMI:$(NO)}GoRegSingleWrite") {
+    field(DTYP, "PSC Ctrl Send")
+    field(OUT , "@PSC$(NO)")
+    field(VAL , "1") 
+    field(FLNK, "$(P){ACMI:$(NO)}send")
+}
+
+# Write a single register
+record(longout, "$(P){ACMI:$(NO)}GoRegSingleWrite2") {
+    field(DTYP, "PSC Ctrl Send")
+    field(OUT , "@PSC$(NO)")
+    field(VAL , "2") 
+    field(FLNK, "$(P){ACMI:$(NO)}send")
+}
+
+# Write a single register
+record(longout, "$(P){ACMI:$(NO)}GoRegSingleWrite5") {
+    field(DTYP, "PSC Ctrl Send")
+    field(OUT , "@PSC$(NO)")
+    field(VAL , "5") 
+    field(FLNK, "$(P){ACMI:$(NO)}send")
+}
+
+
+############# Control PV's ##########################################
+
+record(bo, "$(P){ACMI:$(NO)}KeepAlive-SP") {
+    field(DESC, "Keeps the socket active")
+    field(DTYP, "PSC Single U32")
+    field(OUT , "@PSC$(NO) 5 100")
+    field(SCAN, "1 second")
+    field(FLNK, "$(P){ACMI:$(NO)}GoRegSingleWrite5")
+}
+
+record(bo, "$(P){ACMI:$(NO)}Trig:Strig-SP") {
+    field(DESC, "Soft Trigger by user")
+    field(DTYP, "PSC Single U32")
+    field(OUT , "@PSC$(NO) 1 0")
+    field(ZNAM,"Rdy")
+    field(ONAM,"Trig")
+    field(FLNK, "$(P){ACMI:$(NO)}GoRegSingleWrite")
+    field(HIGH,".2")    #500 ms after low
+}
+
+record(bo, "$(P){ACMI:$(NO)}Trig:TrigSrc-SP") {
+    field(DESC, "Trigger source")
+    field(DTYP, "PSC Single U32")
+    field(OUT , "@PSC$(NO) 1 52")
+    field(ZNAM,"EXT")
+    field(ONAM,"INT")
+    info(autosaveFields, "VAL")
+    field(FLNK, "$(P){ACMI:$(NO)}GoRegSingleWrite")
+}
+
+
+
+
