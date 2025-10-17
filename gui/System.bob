@@ -1,0 +1,2416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2025-03-08 11:55:56 by diag-->
+<display version="2.0.0">
+  <name>System</name>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_77</name>
+    <x>452</x>
+    <y>102</y>
+    <width>208</width>
+    <height>270</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="Grid" red="128" green="128" blue="128">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_76</name>
+    <x>310</x>
+    <y>102</y>
+    <width>134</width>
+    <height>247</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="Grid" red="128" green="128" blue="128">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_75</name>
+    <x>310</x>
+    <y>380</y>
+    <width>430</width>
+    <height>198</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="Grid" red="128" green="128" blue="128">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_69</name>
+    <x>23</x>
+    <y>169</y>
+    <width>232</width>
+    <height>80</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="Grid" red="128" green="128" blue="128">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_370</name>
+    <pv_name>$(P)acTP:Counter-I</pv_name>
+    <x>133</x>
+    <y>199</y>
+    <width>116</width>
+    <precision>0</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_371</name>
+    <pv_name>$(P)acTP:Timer-I</pv_name>
+    <x>133</x>
+    <y>223</y>
+    <width>116</width>
+    <precision>0</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_323</name>
+    <text>Loop Counter</text>
+    <x>29</x>
+    <y>199</y>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_324</name>
+    <text>Loop Timer</text>
+    <x>29</x>
+    <y>223</y>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_325</name>
+    <text>caClient C Program: acTP.c</text>
+    <x>29</x>
+    <y>175</y>
+    <width>220</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group_8</name>
+    <x>164</x>
+    <width>72</width>
+    <height>35</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_70</name>
+      <width>72</width>
+      <height>35</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Grid" red="128" green="128" blue="128">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group_9</name>
+    <x>534</x>
+    <width>72</width>
+    <height>35</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_71</name>
+      <width>72</width>
+      <height>35</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Grid" red="128" green="128" blue="128">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group_16</name>
+    <x>312</x>
+    <width>72</width>
+    <height>35</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_72</name>
+      <width>72</width>
+      <height>35</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Grid" red="128" green="128" blue="128">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_61</name>
+    <actions>
+      <action type="open_display">
+        <file>Beam.bob</file>
+        <target>replace</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text>BEAM</text>
+    <x>167</x>
+    <y>3</y>
+    <width>66</width>
+    <height>29</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Write_Background" red="128" green="255" blue="255">
+      </color>
+    </background_color>
+    <tooltip>$(actions)</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <confirm_message>Reseting will delete the SA History Buffers.  Continue?</confirm_message>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_62</name>
+    <actions>
+    </actions>
+    <text>System</text>
+    <x>537</x>
+    <y>3</y>
+    <width>66</width>
+    <height>29</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="216" blue="0">
+      </color>
+    </background_color>
+    <tooltip>$(actions)</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <confirm_message>Reseting will delete the SA History Buffers.  Continue?</confirm_message>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_63</name>
+    <actions>
+      <action type="open_display">
+        <file>TP2.bob</file>
+        <macros>
+          <BE>LN-BI{ACMI:BE}</BE>
+        </macros>
+        <target>replace</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text>TP2</text>
+    <x>315</x>
+    <y>3</y>
+    <width>66</width>
+    <height>29</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Write_Background" red="128" green="255" blue="255">
+      </color>
+    </background_color>
+    <tooltip>$(actions)</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <confirm_message>Reseting will delete the SA History Buffers.  Continue?</confirm_message>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group_18</name>
+    <x>386</x>
+    <width>72</width>
+    <height>35</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_74</name>
+      <width>72</width>
+      <height>35</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Grid" red="128" green="128" blue="128">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_65</name>
+    <actions>
+      <action type="open_display">
+        <file>TP3.bob</file>
+        <macros>
+          <BE>LN-BI{ACMI:BE}</BE>
+        </macros>
+        <target>replace</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text>TP3</text>
+    <x>389</x>
+    <y>3</y>
+    <width>66</width>
+    <height>29</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Write_Background" red="128" green="255" blue="255">
+      </color>
+    </background_color>
+    <tooltip>$(actions)</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <confirm_message>Reseting will delete the SA History Buffers.  Continue?</confirm_message>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group_27</name>
+    <x>460</x>
+    <width>72</width>
+    <height>35</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_88</name>
+      <width>72</width>
+      <height>35</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Grid" red="128" green="128" blue="128">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_66</name>
+      <actions>
+        <action type="open_display">
+          <file>COW.bob</file>
+          <target>replace</target>
+          <description>Open Display</description>
+        </action>
+      </actions>
+      <text>COW</text>
+      <x>3</x>
+      <y>3</y>
+      <width>66</width>
+      <height>29</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="Write_Background" red="128" green="255" blue="255">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <confirm_message>Reseting will delete the SA History Buffers.  Continue?</confirm_message>
+    </widget>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_83</name>
+    <x>82</x>
+    <width>80</width>
+    <height>35</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="Grid" red="128" green="128" blue="128">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_64</name>
+    <actions>
+      <action type="open_display">
+        <file>Settings.bob</file>
+        <macros>
+          <BE>LN-BI{ACMI:BE}</BE>
+        </macros>
+        <target>replace</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text>Settings</text>
+    <x>85</x>
+    <y>3</y>
+    <width>74</width>
+    <height>29</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Write_Background" red="128" green="255" blue="255">
+      </color>
+    </background_color>
+    <tooltip>$(actions)</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <confirm_message>Reseting will delete the SA History Buffers.  Continue?</confirm_message>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_73</name>
+    <width>80</width>
+    <height>35</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="Grid" red="128" green="128" blue="128">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_60</name>
+    <actions>
+      <action type="open_display">
+        <file>Summary.bob</file>
+        <macros>
+          <BE>LN-BI{ACMI:BE}</BE>
+        </macros>
+        <target>replace</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text>Summary</text>
+    <x>3</x>
+    <y>3</y>
+    <width>74</width>
+    <height>29</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Write_Background" red="128" green="255" blue="255">
+      </color>
+    </background_color>
+    <tooltip>$(actions)</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <confirm_message>Reseting will delete the SA History Buffers.  Continue?</confirm_message>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group_28</name>
+    <x>238</x>
+    <width>72</width>
+    <height>35</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_89</name>
+      <width>72</width>
+      <height>35</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Grid" red="128" green="128" blue="128">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_67</name>
+    <actions>
+      <action type="open_display">
+        <file>TP1.bob</file>
+        <macros>
+          <BE>LN-BI{ACMI:BE}</BE>
+        </macros>
+        <target>replace</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text>TP1</text>
+    <x>241</x>
+    <y>3</y>
+    <width>66</width>
+    <height>29</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Write_Background" red="128" green="255" blue="255">
+      </color>
+    </background_color>
+    <tooltip>$(actions)</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <confirm_message>Reseting will delete the SA History Buffers.  Continue?</confirm_message>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_90</name>
+    <x>23</x>
+    <y>252</y>
+    <width>232</width>
+    <height>80</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="Grid" red="128" green="128" blue="128">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_373</name>
+    <pv_name>$(P)acBM:Counter-I</pv_name>
+    <x>133</x>
+    <y>282</y>
+    <width>116</width>
+    <precision>0</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_374</name>
+    <pv_name>$(P)acBM:Timer-I</pv_name>
+    <x>133</x>
+    <y>306</y>
+    <width>116</width>
+    <precision>0</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_326</name>
+    <text>Loop Counter</text>
+    <x>29</x>
+    <y>282</y>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_327</name>
+    <text>Loop Timer</text>
+    <x>29</x>
+    <y>306</y>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_328</name>
+    <text>caClient C Program: acBM.c</text>
+    <x>29</x>
+    <y>258</y>
+    <width>220</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_91</name>
+    <x>23</x>
+    <y>335</y>
+    <width>232</width>
+    <height>80</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="Grid" red="128" green="128" blue="128">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_375</name>
+    <pv_name>$(P)acSYS:Counter-I</pv_name>
+    <x>133</x>
+    <y>365</y>
+    <width>116</width>
+    <precision>0</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_376</name>
+    <pv_name>$(P)acSYS:Timer-I</pv_name>
+    <x>133</x>
+    <y>389</y>
+    <width>116</width>
+    <precision>0</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_329</name>
+    <text>Loop Counter</text>
+    <x>29</x>
+    <y>365</y>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_330</name>
+    <text>Loop Timer</text>
+    <x>29</x>
+    <y>389</y>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_331</name>
+    <text>caClient C Program: acSYS.c</text>
+    <x>29</x>
+    <y>341</y>
+    <width>220</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_377</name>
+    <pv_name>$(P)Temp1-I</pv_name>
+    <x>113</x>
+    <y>435</y>
+    <width>90</width>
+    <format>1</format>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_352</name>
+    <text>Temp1</text>
+    <x>29</x>
+    <y>435</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_378</name>
+    <pv_name>$(P)Temp2-I</pv_name>
+    <x>113</x>
+    <y>459</y>
+    <width>90</width>
+    <format>1</format>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_353</name>
+    <text>Temp2</text>
+    <x>29</x>
+    <y>459</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_379</name>
+    <pv_name>$(P)Vin-I</pv_name>
+    <x>113</x>
+    <y>483</y>
+    <width>90</width>
+    <format>1</format>
+    <precision>0</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_354</name>
+    <text>Vin</text>
+    <x>29</x>
+    <y>483</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_380</name>
+    <pv_name>$(P)Iin-I</pv_name>
+    <x>113</x>
+    <y>507</y>
+    <width>90</width>
+    <format>1</format>
+    <precision>1</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_355</name>
+    <text>Iin</text>
+    <x>29</x>
+    <y>507</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_381</name>
+    <pv_name>$(M)Temp:DfeSense0-I</pv_name>
+    <x>369</x>
+    <y>131</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>2</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_356</name>
+    <text>DFE0</text>
+    <x>315</x>
+    <y>131</y>
+    <width>50</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_382</name>
+    <pv_name>$(M)Temp:DfeSense1-I</pv_name>
+    <x>369</x>
+    <y>155</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>2</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_357</name>
+    <text>DFE1</text>
+    <x>315</x>
+    <y>155</y>
+    <width>50</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_383</name>
+    <pv_name>$(M)Temp:DfeSense2-I</pv_name>
+    <x>369</x>
+    <y>179</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>2</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_358</name>
+    <text>DFE2</text>
+    <x>315</x>
+    <y>179</y>
+    <width>50</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_384</name>
+    <pv_name>$(M)Temp:DfeSense3-I</pv_name>
+    <x>369</x>
+    <y>203</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>2</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_359</name>
+    <text>DFE3</text>
+    <x>315</x>
+    <y>203</y>
+    <width>50</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_385</name>
+    <pv_name>$(M)Pwr:VinV-I</pv_name>
+    <x>511</x>
+    <y>155</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_360</name>
+    <text>Vin</text>
+    <x>457</x>
+    <y>155</y>
+    <width>50</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_386</name>
+    <pv_name>$(M)Pwr:V3_3V-I</pv_name>
+    <x>511</x>
+    <y>179</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_361</name>
+    <text>V3.3</text>
+    <x>457</x>
+    <y>179</y>
+    <width>50</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_387</name>
+    <pv_name>$(M)Pwr:V2_5V-I</pv_name>
+    <x>511</x>
+    <y>203</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_362</name>
+    <text>V2.5</text>
+    <x>457</x>
+    <y>203</y>
+    <width>50</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_388</name>
+    <pv_name>$(M)Pwr:V1_8V-I</pv_name>
+    <x>511</x>
+    <y>227</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_363</name>
+    <text>V1.8</text>
+    <x>457</x>
+    <y>227</y>
+    <width>50</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_389</name>
+    <pv_name>$(M)Pwr:V1_2DDRV-I</pv_name>
+    <x>511</x>
+    <y>251</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_364</name>
+    <text>V1.2D</text>
+    <x>457</x>
+    <y>251</y>
+    <width>50</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_390</name>
+    <pv_name>$(M)Pwr:V0_85V-I</pv_name>
+    <x>511</x>
+    <y>275</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_365</name>
+    <text>V0.85</text>
+    <x>457</x>
+    <y>275</y>
+    <width>50</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_391</name>
+    <pv_name>$(M)Pwr:V2_5MGTV-I</pv_name>
+    <x>511</x>
+    <y>299</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_366</name>
+    <text>V2.5M</text>
+    <x>457</x>
+    <y>299</y>
+    <width>50</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_392</name>
+    <pv_name>$(M)Pwr:V1_2MGTV-I</pv_name>
+    <x>511</x>
+    <y>323</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_367</name>
+    <text>V1.2M</text>
+    <x>457</x>
+    <y>323</y>
+    <width>50</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_393</name>
+    <pv_name>$(M)Pwr:V0_9MGTV-I</pv_name>
+    <x>511</x>
+    <y>347</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_368</name>
+    <text>V0.9M</text>
+    <x>457</x>
+    <y>347</y>
+    <width>50</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_369</name>
+    <text>Voltages</text>
+    <x>511</x>
+    <y>131</y>
+    <width>70</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_394</name>
+    <pv_name>$(M)Pwr:VinI-I</pv_name>
+    <x>585</x>
+    <y>155</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_395</name>
+    <pv_name>$(M)Pwr:V3_3I-I</pv_name>
+    <x>585</x>
+    <y>179</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_396</name>
+    <pv_name>$(M)Pwr:V2_5I-I</pv_name>
+    <x>585</x>
+    <y>203</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_397</name>
+    <pv_name>$(M)Pwr:V1_8I-I</pv_name>
+    <x>585</x>
+    <y>227</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_398</name>
+    <pv_name>$(M)Pwr:V1_2DDRI-I</pv_name>
+    <x>585</x>
+    <y>251</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_399</name>
+    <pv_name>$(M)Pwr:V0_85I-I</pv_name>
+    <x>585</x>
+    <y>275</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_400</name>
+    <pv_name>$(M)Pwr:V2_5MGTI-I</pv_name>
+    <x>585</x>
+    <y>299</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_401</name>
+    <pv_name>$(M)Pwr:V1_2MGTI-I</pv_name>
+    <x>585</x>
+    <y>323</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_402</name>
+    <pv_name>$(M)Pwr:V0_9MGTI-I</pv_name>
+    <x>585</x>
+    <y>347</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_370</name>
+    <text>Currents</text>
+    <x>585</x>
+    <y>131</y>
+    <width>70</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_403</name>
+    <pv_name>$(M)Temp:DfeRegSense1-I</pv_name>
+    <x>369</x>
+    <y>227</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>2</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_371</name>
+    <text>REG1</text>
+    <x>315</x>
+    <y>227</y>
+    <width>50</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_404</name>
+    <pv_name>$(M)Temp:DfeRegSense2-I</pv_name>
+    <x>369</x>
+    <y>251</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>2</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_372</name>
+    <text>REG2</text>
+    <x>315</x>
+    <y>251</y>
+    <width>50</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_405</name>
+    <pv_name>$(M)Temp:DfeRegSense3-I</pv_name>
+    <x>369</x>
+    <y>275</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>2</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_373</name>
+    <text>REG3</text>
+    <x>315</x>
+    <y>275</y>
+    <width>50</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_406</name>
+    <pv_name>$(M)Temp:PwrMgmt-I</pv_name>
+    <x>369</x>
+    <y>299</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>2</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_374</name>
+    <text>PMGMT</text>
+    <x>315</x>
+    <y>299</y>
+    <width>50</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_375</name>
+    <text>ZuDFE Temps</text>
+    <x>315</x>
+    <y>107</y>
+    <width>124</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_407</name>
+    <pv_name>$(M)SFP0:Temp-I</pv_name>
+    <x>369</x>
+    <y>433</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>2</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_376</name>
+    <text>SFP0</text>
+    <x>315</x>
+    <y>433</y>
+    <width>50</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="175" green="255" blue="175">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <rules>
+      <rule name="BGcolor" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pvInt0==1">
+          <value>
+            <color red="255" green="216" blue="0">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="pvInt0==2">
+          <value>
+            <color red="255" green="175" blue="175">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(M)SFP0-Sts</pv_name>
+      </rule>
+    </rules>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_408</name>
+    <pv_name>$(M)SFP1:Temp-I</pv_name>
+    <x>369</x>
+    <y>457</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>2</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_409</name>
+    <pv_name>$(M)SFP2:Temp-I</pv_name>
+    <x>369</x>
+    <y>481</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>2</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_410</name>
+    <pv_name>$(M)SFP3:Temp-I</pv_name>
+    <x>369</x>
+    <y>505</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>2</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_411</name>
+    <pv_name>$(M)SFP4:Temp-I</pv_name>
+    <x>369</x>
+    <y>529</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>2</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_412</name>
+    <pv_name>$(M)SFP5:Temp-I</pv_name>
+    <x>369</x>
+    <y>553</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>2</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_382</name>
+    <text>Temp</text>
+    <x>369</x>
+    <y>409</y>
+    <width>70</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_413</name>
+    <pv_name>$(M)SFP0:Vcc-I</pv_name>
+    <x>443</x>
+    <y>433</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_414</name>
+    <pv_name>$(M)SFP1:Vcc-I</pv_name>
+    <x>443</x>
+    <y>457</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_415</name>
+    <pv_name>$(M)SFP2:Vcc-I</pv_name>
+    <x>443</x>
+    <y>481</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_416</name>
+    <pv_name>$(M)SFP3:Vcc-I</pv_name>
+    <x>443</x>
+    <y>505</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_417</name>
+    <pv_name>$(M)SFP4:Vcc-I</pv_name>
+    <x>443</x>
+    <y>529</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_418</name>
+    <pv_name>$(M)SFP5:Vcc-I</pv_name>
+    <x>443</x>
+    <y>553</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_383</name>
+    <text>Vcc</text>
+    <x>443</x>
+    <y>409</y>
+    <width>70</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_419</name>
+    <pv_name>$(M)SFP0:TxBias-I</pv_name>
+    <x>517</x>
+    <y>433</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_420</name>
+    <pv_name>$(M)SFP1:TxBias-I</pv_name>
+    <x>517</x>
+    <y>457</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_421</name>
+    <pv_name>$(M)SFP2:TxBias-I</pv_name>
+    <x>517</x>
+    <y>481</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_422</name>
+    <pv_name>$(M)SFP3:TxBias-I</pv_name>
+    <x>517</x>
+    <y>505</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_423</name>
+    <pv_name>$(M)SFP4:TxBias-I</pv_name>
+    <x>517</x>
+    <y>529</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_424</name>
+    <pv_name>$(M)SFP5:TxBias-I</pv_name>
+    <x>517</x>
+    <y>553</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_384</name>
+    <text>TxBias</text>
+    <x>517</x>
+    <y>409</y>
+    <width>70</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_425</name>
+    <pv_name>$(M)SFP0:TxPwr-I</pv_name>
+    <x>591</x>
+    <y>433</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_426</name>
+    <pv_name>$(M)SFP1:TxPwr-I</pv_name>
+    <x>591</x>
+    <y>457</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_427</name>
+    <pv_name>$(M)SFP2:TxPwr-I</pv_name>
+    <x>591</x>
+    <y>481</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_428</name>
+    <pv_name>$(M)SFP3:TxPwr-I</pv_name>
+    <x>591</x>
+    <y>505</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_429</name>
+    <pv_name>$(M)SFP4:TxPwr-I</pv_name>
+    <x>591</x>
+    <y>529</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_430</name>
+    <pv_name>$(M)SFP5:TxPwr-I</pv_name>
+    <x>591</x>
+    <y>553</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_385</name>
+    <text>TxPwr</text>
+    <x>591</x>
+    <y>409</y>
+    <width>70</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_431</name>
+    <pv_name>$(M)SFP0:RxPwr-I</pv_name>
+    <x>665</x>
+    <y>433</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_432</name>
+    <pv_name>$(M)SFP1:RxPwr-I</pv_name>
+    <x>665</x>
+    <y>457</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_433</name>
+    <pv_name>$(M)SFP2:RxPwr-I</pv_name>
+    <x>665</x>
+    <y>481</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_434</name>
+    <pv_name>$(M)SFP3:RxPwr-I</pv_name>
+    <x>665</x>
+    <y>505</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_435</name>
+    <pv_name>$(M)SFP4:RxPwr-I</pv_name>
+    <x>665</x>
+    <y>529</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_436</name>
+    <pv_name>$(M)SFP5:RxPwr-I</pv_name>
+    <x>665</x>
+    <y>553</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_386</name>
+    <text>RxPwr</text>
+    <x>665</x>
+    <y>409</y>
+    <width>70</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_387</name>
+    <text>ZuDFE SFP Optical Transceivers</text>
+    <x>315</x>
+    <y>385</y>
+    <width>420</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_388</name>
+    <text>Status</text>
+    <x>315</x>
+    <y>409</y>
+    <width>50</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_389</name>
+    <text></text>
+    <x>457</x>
+    <y>131</y>
+    <width>50</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_390</name>
+    <text>ZuDFE Power Management</text>
+    <x>457</x>
+    <y>107</y>
+    <width>198</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_437</name>
+    <pv_name>$(M)Sys:Uptime-I</pv_name>
+    <x>133</x>
+    <y>115</y>
+    <width>116</width>
+    <format>1</format>
+    <precision>0</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_438</name>
+    <pv_name>$(M)Fpga:FwVer-I</pv_name>
+    <x>133</x>
+    <y>139</y>
+    <width>116</width>
+    <format>1</format>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_391</name>
+    <text>ZuDFE Uptime</text>
+    <x>29</x>
+    <y>115</y>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_392</name>
+    <text>ZuDFE FwVer</text>
+    <x>29</x>
+    <y>139</y>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_393</name>
+    <text>Backend ZuDFE</text>
+    <x>29</x>
+    <y>91</y>
+    <width>220</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_92</name>
+    <x>23</x>
+    <y>85</y>
+    <width>232</width>
+    <height>80</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="Grid" red="128" green="128" blue="128">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_394</name>
+    <text>Die</text>
+    <x>315</x>
+    <y>323</y>
+    <width>50</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_439</name>
+    <pv_name>$(M)Temp:FpgaDie-I</pv_name>
+    <x>369</x>
+    <y>323</y>
+    <width>70</width>
+    <format>1</format>
+    <precision>2</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_395</name>
+    <text>SFP1</text>
+    <x>315</x>
+    <y>457</y>
+    <width>50</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="175" green="255" blue="175">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <rules>
+      <rule name="BGcolor" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pvInt0==1">
+          <value>
+            <color red="255" green="216" blue="0">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="pvInt0==2">
+          <value>
+            <color red="255" green="175" blue="175">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(M)SFP1-Sts</pv_name>
+      </rule>
+    </rules>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_396</name>
+    <text>SFP2</text>
+    <x>315</x>
+    <y>481</y>
+    <width>50</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="175" green="255" blue="175">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <rules>
+      <rule name="BGcolor" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pvInt0==1">
+          <value>
+            <color red="255" green="216" blue="0">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="pvInt0==2">
+          <value>
+            <color red="255" green="175" blue="175">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(M)SFP2-Sts</pv_name>
+      </rule>
+    </rules>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_397</name>
+    <text>SFP3</text>
+    <x>315</x>
+    <y>505</y>
+    <width>50</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="175" green="255" blue="175">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <rules>
+      <rule name="BGcolor" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pvInt0==1">
+          <value>
+            <color red="255" green="216" blue="0">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="pvInt0==2">
+          <value>
+            <color red="255" green="175" blue="175">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(M)SFP3-Sts</pv_name>
+      </rule>
+    </rules>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_398</name>
+    <text>SFP4</text>
+    <x>315</x>
+    <y>529</y>
+    <width>50</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="175" green="255" blue="175">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <rules>
+      <rule name="BGcolor" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pvInt0==1">
+          <value>
+            <color red="255" green="216" blue="0">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="pvInt0==2">
+          <value>
+            <color red="255" green="175" blue="175">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(M)SFP4-Sts</pv_name>
+      </rule>
+    </rules>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_399</name>
+    <text>SFP5</text>
+    <x>315</x>
+    <y>553</y>
+    <width>50</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="175" green="255" blue="175">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <rules>
+      <rule name="BGcolor" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pvInt0==1">
+          <value>
+            <color red="255" green="216" blue="0">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="pvInt0==2">
+          <value>
+            <color red="255" green="175" blue="175">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(M)SFP5-Sts</pv_name>
+      </rule>
+    </rules>
+    <border_width>1</border_width>
+  </widget>
+</display>

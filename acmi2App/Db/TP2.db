@@ -1,0 +1,487 @@
+#########################################################
+#  Test Pulse 2 EEPROM Setpoints and Setpoint readbacks 
+#########################################################
+
+record(longout,"$(P)EE:TP2:pulDelay-SP") {
+    field(DESC, "EEPROM write")
+    field(DTYP, "PSC Single I32")
+    field(OUT , "@Tx 1 272")
+    field(FLNK, "$(P)GoRegSingleWrite")
+}
+
+record(longin,"$(P)EE:TP2:pulDelay-I") {
+    field(DESC, "EEPROM readback")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 272")
+    field(SCAN, "I/O Intr")
+}
+
+record(longout,"$(P)EE:TP2:pulWidth-SP") {
+    field(DESC, "EEPROM write")
+    field(DTYP, "PSC Single I32")
+    field(OUT , "@Tx 1 276")
+    field(FLNK, "$(P)GoRegSingleWrite")
+}
+
+record(longin,"$(P)EE:TP2:pulWidth-I") {
+    field(DESC, "EEPROM readback")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 276")
+    field(SCAN, "I/O Intr")
+}
+
+record(longout,"$(P)EE:TP2:adcDelay-SP") {
+    field(DESC, "EEPROM write")
+    field(DTYP, "PSC Single I32")
+    field(OUT , "@Tx 1 280")
+    field(FLNK, "$(P)GoRegSingleWrite")
+}
+
+record(longin,"$(P)EE:TP2:adcDelay-I") {
+    field(DESC, "EEPROM readback")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 280")
+    field(SCAN, "I/O Intr")
+}
+
+record(longout,"$(P)EE:TP2:negLevel-SP") {
+    field(DESC, "EEPROM write")
+    field(DTYP, "PSC Single I32")
+    field(OUT , "@Tx 1 404")
+    field(FLNK, "$(P)GoRegSingleWrite")
+}
+
+record(longin,"$(P)EE:TP2:negLevel-I") {
+    field(DESC, "EEPROM readback")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 404")
+    field(SCAN, "I/O Intr")
+}
+
+record(longout,"$(P)EE:TP2:posLevel-SP") {
+    field(DESC, "EEPROM write")
+    field(DTYP, "PSC Single I32")
+    field(OUT , "@Tx 1 416")
+    field(FLNK, "$(P)GoRegSingleWrite")
+}
+
+record(longin,"$(P)EE:TP2:posLevel-I") {
+    field(DESC, "EEPROM readback")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 416")
+    field(SCAN, "I/O Intr")
+}
+
+#########################################################
+#  Test Pulse 2 EEPROM Alarm Setpoints and Readbacks
+#########################################################
+
+record(longout,"$(P)EE:TP2:intgLL-SP") {
+    field(DESC, "EEPROM write")
+    field(DTYP, "PSC Single I32")
+    field(OUT , "@Tx 1 312")
+    field(FLNK, "$(P)GoRegSingleWrite")
+}
+
+record(longin,"$(P)EE:TP2:intgLL-I") {
+    field(DESC, "EEPROM readback")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 312")
+    field(SCAN, "I/O Intr")
+}
+
+record(longout,"$(P)EE:TP2:intgHL-SP") {
+    field(DESC, "EEPROM write")
+    field(DTYP, "PSC Single I32")
+    field(OUT , "@Tx 1 316")
+    field(FLNK, "$(P)GoRegSingleWrite")
+}
+
+record(longin,"$(P)EE:TP2:intgHL-I") {
+    field(DESC, "EEPROM readback")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 316")
+    field(SCAN, "I/O Intr")
+}
+
+record(longout,"$(P)EE:TP2:peakLL-SP") {
+    field(DESC, "EEPROM write")
+    field(DTYP, "PSC Single I32")
+    field(OUT , "@Tx 1 336")
+    field(FLNK, "$(P)GoRegSingleWrite")
+}
+
+record(longin,"$(P)EE:TP2:peakLL-I") {
+    field(DESC, "EEPROM readback")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 336")
+    field(SCAN, "I/O Intr")
+}
+
+record(longout,"$(P)EE:TP2:peakHL-SP") {
+    field(DESC, "EEPROM write")
+    field(DTYP, "PSC Single I32")
+    field(OUT , "@Tx 1 340")
+    field(FLNK, "$(P)GoRegSingleWrite")
+}
+
+record(longin,"$(P)EE:TP2:peakHL-I") {
+    field(DESC, "EEPROM readback")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 340")
+    field(SCAN, "I/O Intr")
+}
+
+record(longout,"$(P)EE:TP2:fwhmLL-SP") {
+    field(DESC, "EEPROM write")
+    field(DTYP, "PSC Single I32")
+    field(OUT , "@Tx 1 360")
+    field(FLNK, "$(P)GoRegSingleWrite")
+}
+
+record(longin,"$(P)EE:TP2:fwhmLL-I") {
+    field(DESC, "EEPROM readback")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 360")
+    field(SCAN, "I/O Intr")
+}
+
+record(longout,"$(P)EE:TP2:fwhmHL-SP") {
+    field(DESC, "EEPROM write")
+    field(DTYP, "PSC Single I32")
+    field(OUT , "@Tx 1 364")
+    field(FLNK, "$(P)GoRegSingleWrite")
+}
+
+record(longin,"$(P)EE:TP2:fwhmHL-I") {
+    field(DESC, "EEPROM readback")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 364")
+    field(SCAN, "I/O Intr")
+}
+
+record(longout,"$(P)EE:TP2:baseLL-SP") {
+    field(DESC, "EEPROM write")
+    field(DTYP, "PSC Single I32")
+    field(OUT , "@Tx 1 384")
+    field(FLNK, "$(P)GoRegSingleWrite")
+}
+
+record(longin,"$(P)EE:TP2:baseLL-I") {
+    field(DESC, "EEPROM readback")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 384")
+    field(SCAN, "I/O Intr")
+}
+
+record(longout,"$(P)EE:TP2:baseHL-SP") {
+    field(DESC, "EEPROM write")
+    field(DTYP, "PSC Single I32")
+    field(OUT , "@Tx 1 388")
+    field(FLNK, "$(P)GoRegSingleWrite")
+}
+
+record(longin,"$(P)EE:TP2:baseHL-I") {
+    field(DESC, "EEPROM readback")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 388")
+    field(SCAN, "I/O Intr")
+}
+
+#########################################################
+#  Test Pulse 2 ARTIX Measurements 
+#########################################################
+
+record(longin,"$(P)TP2:base-I") {
+    field(DESC, "Test Pulse 2 Info")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 48 ")
+    field(SCAN, "I/O Intr")
+}
+
+record(longin,"$(P)TP2:peak-I") {
+    field(DESC, "Test Pulse 2 Info")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 52 ")
+    field(SCAN, "I/O Intr")
+}
+
+record(longin,"$(P)TP2:intg-I") {
+    field(DESC, "Test Pulse 2 Info")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 56 ")
+    field(SCAN, "I/O Intr")
+}
+
+record(longin,"$(P)TP2:fwhm-I") {
+    field(DESC, "Test Pulse 2 Info")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 60 ")
+    field(SCAN, "I/O Intr")
+}
+
+record(longin,"$(P)TP2:indx-I") {
+    field(DESC, "Test Pulse 2 Info")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 64")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai,"$(P)TP2:Q-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+  field(EGU,"nC")
+}
+
+#########################################################
+#  Test Pulse 1 IOC PVs
+#########################################################
+
+record(waveform,"$(P)TP2-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"72 Point Waveform for TP2")
+  field(NELM,"100")
+  field(FTVL,"FLOAT")
+}
+
+record(waveform,"$(P)TP2:Fault-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"72 Point Waveform for TP2")
+  field(NELM,"100")
+  field(FTVL,"FLOAT")
+}
+
+record(waveform,"$(P)TP2:Q-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"History")
+  field(NELM,"10000")
+  field(FTVL,"FLOAT")
+}
+
+record(waveform,"$(P)TP2:peak-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"History")
+  field(NELM,"10000")
+  field(FTVL,"FLOAT")
+}
+
+record(waveform,"$(P)TP2:base-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"History")
+  field(NELM,"10000")
+  field(FTVL,"FLOAT")
+}
+
+record(waveform,"$(P)TP2:fwhm-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"History")
+  field(NELM,"10000")
+  field(FTVL,"FLOAT")
+}
+
+record(waveform,"$(P)TP2:Stats-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"History")
+  field(NELM,"12")
+  field(FTVL,"FLOAT")
+}
+
+record(longout,"$(P)TP2:Reset-SP") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(longin,"$(P)TP2:WfmLen-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(waveform,"$(P)TP2:Stats-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"History")
+  field(NELM,"12")
+  field(FTVL,"FLOAT")
+}
+
+record(waveform,"$(P)TP2:Fault:Stats-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"History")
+  field(NELM,"6")
+  field(FTVL,"FLOAT")
+}
+
+record(longin,"$(P)TP2:IOC:base-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(longin,"$(P)TP2:IOC:peak-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(longin,"$(P)TP2:IOC:intg-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(longin,"$(P)TP2:IOC:fwhm-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(longin,"$(P)TP2:IOC:indx-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(ai,"$(P)TP2:IOC:Q-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+  field(EGU,"nC")
+}
+
+###########
+
+record(longin,"$(P)TP2:Fault:base-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(longin,"$(P)TP2:Fault:peak-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(longin,"$(P)TP2:Fault:intg-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(longin,"$(P)TP2:Fault:fwhm-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(longin,"$(P)TP2:Fault:indx-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(ai,"$(P)TP2:Fault:Q-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+  field(EGU,"nC")
+}
+
+
+record(ai,"$(P)TP2:IOC:Qavg-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+  field(EGU,"nC")
+}
+
+record(ai,"$(P)TP2:IOC:Qstd-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+  field(EGU,"nC")
+}
+
+record(waveform,"$(P)TP2:Fault:date-I"){
+  field(DTYP,"Soft Channel")
+  field(NELM,40)
+  field(FTVL,"CHAR")
+}
+
+record(ai,"$(P)TP2:IOC:PKavg-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+  field(EGU,"Cnts")
+}
+
+record(ai,"$(P)TP2:IOC:PKstd-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+  field(EGU,"Cnts")
+}
+
+record(ai,"$(P)TP2:IOC:BLavg-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+  field(EGU,"Cnts")
+}
+
+record(ai,"$(P)TP2:IOC:BLstd-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+  field(EGU,"Cnts")
+}
+
+#########################################################
+#  Test Pulse 1 Post Mortem PVs
+#########################################################
+
+record(longin,"$(P)TP2:PM:base-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(longin,"$(P)TP2:PM:peak-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(longin,"$(P)TP2:PM:intg-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(longin,"$(P)TP2:PM:fwhm-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(longin,"$(P)TP2:PM:indx-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(ai,"$(P)TP2:PM:Q-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+  field(EGU,"nC")
+}
+
+record(waveform,"$(P)TP2:PM-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"72 Point Waveform for TP2")
+  field(NELM,"100")
+  field(FTVL,"FLOAT")
+}

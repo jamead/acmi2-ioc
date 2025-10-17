@@ -1,0 +1,477 @@
+record(longin,"$(P)BEAM:base-I") {
+    field(DESC, "Beam Info")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 8 ")
+    field(SCAN, "I/O Intr")
+}
+
+record(longin,"$(P)BEAM:peak-I") {
+    field(DESC, "Beam Info")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 12 ")
+    field(SCAN, "I/O Intr")
+}
+
+record(longin,"$(P)BEAM:intg-I") {
+    field(DESC, "Beam Info")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 16 ")
+    field(SCAN, "I/O Intr")
+}
+
+record(longin,"$(P)BEAM:fwhm-I") {
+    field(DESC, "Beam Info")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 20 ")
+    field(SCAN, "I/O Intr")
+}
+
+record(longin,"$(P)BEAM:indx-I") {
+    field(DESC, "Beam Info")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 24")
+    field(SCAN, "I/O Intr")
+}
+
+record(longin,"$(P)COW:base-I") {
+    field(DESC, "Test Pulse 3 Info")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 88 ")
+    field(SCAN, "I/O Intr")
+}
+
+record(longin,"$(P)COW:peak-I") {
+    field(DESC, "Test Pulse 3 Info")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 92 ")
+    field(SCAN, "I/O Intr")
+}
+
+record(longin,"$(P)COW:intg-I") {
+    field(DESC, "Test Pulse 3 Info")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 96 ")
+    field(SCAN, "I/O Intr")
+}
+
+record(longin,"$(P)COW:fwhm-I") {
+    field(DESC, "Test Pulse 3 Info")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 100 ")
+    field(SCAN, "I/O Intr")
+}
+
+record(longin,"$(P)COW:indx-I") {
+    field(DESC, "Test Pulse 3 Info")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 104")
+    field(SCAN, "I/O Intr")
+}
+
+record(longout,"$(P)EE:BEAM:adcDelay-SP") {
+    field(DESC, "EEPROM write")
+    field(DTYP, "PSC Single I32")
+    field(OUT , "@Tx 1 296")
+    field(FLNK, "$(P)GoRegSingleWrite")
+}
+
+record(longin,"$(P)EE:BEAM:adcDelay-I") {
+    field(DESC, "EEPROM readback")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 296")
+    field(SCAN, "I/O Intr")
+}
+
+record(longout,"$(P)EE:BEAM:baseLL-SP") {
+    field(DESC, "EEPROM write")
+    field(DTYP, "PSC Single I32")
+    field(OUT , "@Tx 1 432")
+    field(FLNK, "$(P)GoRegSingleWrite")
+}
+
+record(longin,"$(P)EE:BEAM:baseLL-I") {
+    field(DESC, "EEPROM readback")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 432")
+    field(SCAN, "I/O Intr")
+}
+
+record(longout,"$(P)EE:BEAM:baseHL-SP") {
+    field(DESC, "EEPROM write")
+    field(DTYP, "PSC Single I32")
+    field(OUT , "@Tx 1 436")
+    field(FLNK, "$(P)GoRegSingleWrite")
+}
+
+record(longin,"$(P)EE:BEAM:baseHL-I") {
+    field(DESC, "EEPROM readback")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 436")
+    field(SCAN, "I/O Intr")
+}
+
+record(longout,"$(P)EE:COW:thresh-SP") {
+    field(DESC, "EEPROM write")
+    field(DTYP, "PSC Single I32")
+    field(OUT , "@Tx 1 300")
+    field(FLNK, "$(P)GoRegSingleWrite")
+}
+
+record(longin,"$(P)EE:COW:thresh-I") {
+    field(DESC, "EEPROM readback")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 300")
+    field(SCAN, "I/O Intr")
+}
+
+record(longout,"$(P)EE:BEAM:QHL-SP") {
+    field(DESC, "EEPROM write")
+    field(DTYP, "PSC Single I32")
+    field(OUT , "@Tx 1 428")
+    field(FLNK, "$(P)GoRegSingleWrite")
+}
+
+record(longin,"$(P)EE:BEAM:QHL-I") {
+    field(DESC, "EEPROM readback")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 428")
+    field(SCAN, "I/O Intr")
+}
+
+record(waveform,"$(P)COW-Wfm") {
+    field(DTYP, "PSC Block I32 In")
+    field(INP , "@Wfm 51 512")
+    field(SCAN,"I/O Intr")
+    field(FTVL,"DOUBLE")
+    field(NELM,"128")
+}
+
+##### Accumulator ARTIX PVs:
+
+record(longin,"$(P)Accumulator-I") {
+    field(DESC, "Accumulator Integral Sum")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 120")
+    field(SCAN, "I/O Intr")
+}
+
+record(ai,"$(P)Accum:limit:calc-I") {
+    field(DESC, "Faults TP")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 140")
+    field(SCAN, "I/O Intr")
+}
+
+record(longout,"$(P)EE:Accumulator:HL-SP") {
+    field(DESC, "EEPROM write")
+    field(DTYP, "PSC Single I32")
+    field(OUT , "@Tx 1 424")
+    field(FLNK, "$(P)GoRegSingleWrite")
+}
+
+record(longin,"$(P)EE:Accumulator:HL-I") {
+    field(DESC, "EEPROM readback")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 424")
+    field(SCAN, "I/O Intr")
+}
+
+record(longout,"$(P)EE:Accumulator:Len-SP") {
+    field(DESC, "EEPROM write")
+    field(DTYP, "PSC Single I32")
+    field(OUT , "@Tx 1 448")
+    field(FLNK, "$(P)GoRegSingleWrite")
+}
+
+record(longin,"$(P)EE:Accumulator:Len-I") {
+    field(DESC, "EEPROM readback")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 448")
+    field(SCAN, "I/O Intr")
+}
+
+record(longout,"$(P)EE:Accumulator:Qmin-SP") {
+    field(DESC, "EEPROM write")
+    field(DTYP, "PSC Single I32")
+    field(OUT , "@Tx 1 444")
+    field(FLNK, "$(P)GoRegSingleWrite")
+}
+
+record(longin,"$(P)EE:Accumulator:Qmin-I") {
+    field(DESC, "EEPROM readback")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 444")
+    field(SCAN, "I/O Intr")
+}
+
+
+# IOC PVs:
+
+record(ai,"$(P)BEAM:IOC:Q-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+  field(EGU,"nC")
+}
+
+record(longout,"$(P)BEAM:Reset-SP") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(longin,"$(P)BEAM:WfmLen-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(waveform,"$(P)BEAM:Stats-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"History")
+  field(NELM,"12")
+  field(FTVL,"FLOAT")
+}
+
+record(ai,"$(P)BEAM:Q-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+  field(EGU,"nC")
+}
+
+record(ai,"$(P)Accumulator:Q-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+  field(EGU,"nC")
+}
+
+record(ai,"$(P)Accumulator:QHL-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+  field(EGU,"nC")
+}
+
+record(ai,"$(P)COW:Q-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+  field(EGU,"nC")
+}
+
+record(longin,"$(P)COW:Fault:base-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(longin,"$(P)COW:Fault:peak-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(longin,"$(P)COW:Fault:intg-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(longin,"$(P)COW:Fault:fwhm-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(longin,"$(P)COW:Fault:indx-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(ai,"$(P)COW:Fault:Q-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+  field(EGU,"nC")
+}
+
+record(waveform,"$(P)COW:Fault:date-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(NELM,"40")
+  field(FTVL,"CHAR")
+}
+
+# Waveform IOC PVs:
+
+record(waveform,"$(P)BEAM-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"72 Point Waveform for Beam")
+  field(NELM,"100")
+  field(FTVL,"LONG")
+}
+
+record(waveform,"$(P)BEAM:Q-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"History")
+  field(NELM,"7300")
+  field(FTVL,"FLOAT")
+}
+
+record(waveform,"$(P)BEAM:peak-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"History")
+  field(NELM,"7300")
+  field(FTVL,"LONG")
+}
+
+record(waveform,"$(P)BEAM:base-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"History")
+  field(NELM,"7300")
+  field(FTVL,"LONG")
+}
+
+record(waveform,"$(P)Accumulator:Q-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"Charge accumulation History")
+  field(NELM,"7300")
+  field(FTVL,"FLOAT")
+}
+
+record(waveform,"$(P)COW:Fault-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"128 Point Waveform for COW Fault")
+  field(NELM,"128")
+  field(FTVL,"LONG")
+}
+
+#########################################################
+#  Test Pulse 1 Post Mortem PVs
+ #########################################################
+
+record(longin,"$(P)BEAM:PM:base-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(longin,"$(P)BEAM:PM:peak-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(longin,"$(P)BEAM:PM:intg-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(longin,"$(P)BEAM:PM:fwhm-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(longin,"$(P)BEAM:PM:indx-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(ai,"$(P)BEAM:PM:Q-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+  field(EGU,"nC")
+}
+
+record(waveform,"$(P)BEAM:PM-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"72 Point Waveform for TP1")
+  field(NELM,"100")
+  field(FTVL,"LONG")
+}
+
+record(ai,"$(P)Accumulator:PM:Q-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+  field(EGU,"nC")
+}
+
+record(longin,"$(P)Accumulator:PM-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+  field(EGU,"nC")
+}
+
+record(longin,"$(P)Accumulator:PM:Len-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(longin,"$(P)Accumulator:PM:QHL-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+  field(EGU,"nC")
+}
+
+record(waveform,"$(P)Accumulator:PM:Q-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"Charge accumulation History")
+  field(NELM,"7300")
+  field(FTVL,"FLOAT")
+}
+
+
+
+record(longin,"$(P)COW:PM:base-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(longin,"$(P)COW:PM:peak-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(longin,"$(P)COW:PM:intg-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(longin,"$(P)COW:PM:fwhm-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(longin,"$(P)COW:PM:indx-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(ai,"$(P)COW:PM:Q-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+  field(EGU,"nC")
+}
+
+record(waveform,"$(P)COW:PM-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"128 Point Waveform for TP1")
+  field(NELM,"150")
+  field(FTVL,"LONG")
+}
