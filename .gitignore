@@ -6,7 +6,7 @@
 /bin/
 /cfg/
 /db/
-/dbd/
+#/dbd/
 /html/
 /include/
 /lib/
