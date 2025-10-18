@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-10-15 11:57:17 by mead-->
+<!--Saved on 2025-10-17 10:17:57 by mead-->
 <display version="2.0.0">
   <width>200</width>
   <height>200</height>
@@ -17,7 +17,7 @@
       <action type="open_display">
         <file>acmi.bob</file>
         <macros>
-          <P>LN-BI</P>
+          <P>lab</P>
           <N>A</N>
         </macros>
         <target>window</target>
@@ -70,7 +70,7 @@
       <action type="open_display">
         <file>acmi.bob</file>
         <macros>
-          <P>LN-BI</P>
+          <P>lab</P>
           <NO>B</NO>
         </macros>
         <target>window</target>

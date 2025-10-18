@@ -5,10 +5,10 @@
 
 < envPaths
 
-epicsEnvSet("IOCNAME", "LN-BI")
+epicsEnvSet("IOCNAME", "lab")
 
 # PSC IP address
-epicsEnvSet("ACMI2_IP", "10.0.142.116"); 
+epicsEnvSet("ACMI2_IP", "10.0.142.128"); 
 
 #epicsEnvSet("BLEN",100000);        # Snapshot DMA Length
 

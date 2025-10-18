@@ -51,11 +51,10 @@ record(bo, "$(P){ACMI:$(NO)}KeepAlive-SP") {
 record(bo, "$(P){ACMI:$(NO)}Trig:Strig-SP") {
     field(DESC, "Soft Trigger by user")
     field(DTYP, "PSC Single U32")
-    field(OUT , "@PSC$(NO) 1 0")
-    field(ZNAM,"Rdy")
-    field(ONAM,"Trig")
+    field(OUT , "@PSC$(NO) 1 50")
+    field(SCAN, "1 second")   
     field(FLNK, "$(P){ACMI:$(NO)}GoRegSingleWrite")
-    field(HIGH,".2")    #500 ms after low
+
 }
 
 record(bo, "$(P){ACMI:$(NO)}Trig:TrigSrc-SP") {

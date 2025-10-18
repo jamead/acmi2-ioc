@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-10-15 11:59:59 by mead-->
+<!--Saved on 2025-10-17 10:45:24 by mead-->
 <display version="2.0.0">
   <name>ACMI</name>
   <width>1150</width>
-  <height>800</height>
+  <height>950</height>
   <background_color>
     <color red="240" green="240" blue="240">
     </color>
@@ -74,7 +74,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_254</name>
-            <pv_name>LN-BI{ACMI:A}beamaccum_limit_calc-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}beamaccum_limit_calc-I</pv_name>
             <x>633</x>
             <y>68</y>
             <background_color>
@@ -122,7 +122,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_255</name>
-            <pv_name>LN-BI{ACMI:A}EEPROM:CRC-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EEPROM:CRC-I</pv_name>
             <x>634</x>
             <y>89</y>
             <background_color>
@@ -141,7 +141,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_256</name>
-            <pv_name>LN-BI{ACMI:A}acis-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}acis-I</pv_name>
             <x>388</x>
             <y>111</y>
             <background_color>
@@ -224,7 +224,7 @@ $(pv_value)</tooltip>
               <trace>
                 <name></name>
                 <x_pv></x_pv>
-                <y_pv>LN-BI{ACMI:A}ADC-Wfm</y_pv>
+                <y_pv>$(P){ACMI:$(N)}ADC-Wfm</y_pv>
                 <err_pv></err_pv>
                 <axis>0</axis>
                 <trace_type>1</trace_type>
@@ -242,7 +242,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_235</name>
-            <pv_name>LN-BI{ACMI:A}TP2:integral-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}TP2:integral-I</pv_name>
             <x>359</x>
             <y>272</y>
             <background_color>
@@ -260,7 +260,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_236</name>
-            <pv_name>LN-BI{ACMI:A}TP2:fwhm-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}TP2:fwhm-I</pv_name>
             <x>359</x>
             <y>293</y>
             <background_color>
@@ -278,7 +278,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_237</name>
-            <pv_name>LN-BI{ACMI:A}TP2:peak-index-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}TP2:peak-index-I</pv_name>
             <x>359</x>
             <y>314</y>
             <background_color>
@@ -311,7 +311,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_238</name>
-            <pv_name>LN-BI{ACMI:A}TP3:baseline-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}TP3:baseline-I</pv_name>
             <x>471</x>
             <y>231</y>
             <background_color>
@@ -329,7 +329,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_239</name>
-            <pv_name>LN-BI{ACMI:A}TP3:peak-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}TP3:peak-I</pv_name>
             <x>471</x>
             <y>252</y>
             <background_color>
@@ -347,7 +347,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_240</name>
-            <pv_name>LN-BI{ACMI:A}TP3:integral-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}TP3:integral-I</pv_name>
             <x>471</x>
             <y>273</y>
             <background_color>
@@ -365,7 +365,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_241</name>
-            <pv_name>LN-BI{ACMI:A}TP3:fwhm-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}TP3:fwhm-I</pv_name>
             <x>471</x>
             <y>294</y>
             <background_color>
@@ -383,7 +383,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_242</name>
-            <pv_name>LN-BI{ACMI:A}TP3:peak-index-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}TP3:peak-index-I</pv_name>
             <x>471</x>
             <y>315</y>
             <background_color>
@@ -416,7 +416,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_243</name>
-            <pv_name>LN-BI{ACMI:A}BEAMOOW:baseline-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}BEAMOOW:baseline-I</pv_name>
             <x>585</x>
             <y>231</y>
             <background_color>
@@ -434,7 +434,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_244</name>
-            <pv_name>LN-BI{ACMI:A}BEAMOOW:peak-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}BEAMOOW:peak-I</pv_name>
             <x>585</x>
             <y>252</y>
             <background_color>
@@ -452,7 +452,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_245</name>
-            <pv_name>LN-BI{ACMI:A}BEAMOOW:integral-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}BEAMOOW:integral-I</pv_name>
             <x>585</x>
             <y>273</y>
             <background_color>
@@ -470,7 +470,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_246</name>
-            <pv_name>LN-BI{ACMI:A}BEAMOOW:fwhm-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}BEAMOOW:fwhm-I</pv_name>
             <x>585</x>
             <y>294</y>
             <background_color>
@@ -488,7 +488,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_247</name>
-            <pv_name>LN-BI{ACMI:A}BEAMOOW:peak-index-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}BEAMOOW:peak-index-I</pv_name>
             <x>585</x>
             <y>315</y>
             <background_color>
@@ -506,7 +506,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_248</name>
-            <pv_name>LN-BI{ACMI:A}faults_live-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}faults_live-I</pv_name>
             <x>388</x>
             <y>47</y>
             <background_color>
@@ -540,7 +540,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_249</name>
-            <pv_name>LN-BI{ACMI:A}faults_lat-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}faults_lat-I</pv_name>
             <x>387</x>
             <y>68</y>
             <background_color>
@@ -589,7 +589,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_250</name>
-            <pv_name>LN-BI{ACMI:A}faults_tp-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}faults_tp-I</pv_name>
             <x>388</x>
             <y>89</y>
             <background_color>
@@ -623,7 +623,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_251</name>
-            <pv_name>LN-BI{ACMI:A}startup_cnt-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}startup_cnt-I</pv_name>
             <x>131</x>
             <y>120</y>
             <background_color>
@@ -641,7 +641,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_252</name>
-            <pv_name>LN-BI{ACMI:A}timestamp-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}timestamp-I</pv_name>
             <x>131</x>
             <y>99</y>
             <background_color>
@@ -674,7 +674,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_253</name>
-            <pv_name>LN-BI{ACMI:A}BEAM:accum-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}BEAM:accum-I</pv_name>
             <x>634</x>
             <y>47</y>
             <background_color>
@@ -722,7 +722,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_221</name>
-            <pv_name>LN-BI{ACMI:A}fpgaver-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}fpgaver-I</pv_name>
             <x>131</x>
             <y>68</y>
             <background_color>
@@ -740,7 +740,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_219</name>
-            <pv_name>LN-BI{ACMI:A}header-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}header-I</pv_name>
             <x>131</x>
             <y>47</y>
             <background_color>
@@ -774,7 +774,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_228</name>
-            <pv_name>LN-BI{ACMI:A}TP1:baseline-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}TP1:baseline-I</pv_name>
             <x>244</x>
             <y>230</y>
             <background_color>
@@ -792,7 +792,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_229</name>
-            <pv_name>LN-BI{ACMI:A}TP1:peak-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}TP1:peak-I</pv_name>
             <x>244</x>
             <y>251</y>
             <background_color>
@@ -810,7 +810,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_230</name>
-            <pv_name>LN-BI{ACMI:A}TP1:integral-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}TP1:integral-I</pv_name>
             <x>244</x>
             <y>272</y>
             <background_color>
@@ -828,7 +828,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_231</name>
-            <pv_name>LN-BI{ACMI:A}TP1:fwhm-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}TP1:fwhm-I</pv_name>
             <x>244</x>
             <y>293</y>
             <background_color>
@@ -846,7 +846,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_232</name>
-            <pv_name>LN-BI{ACMI:A}TP1:peak-index-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}TP1:peak-index-I</pv_name>
             <x>244</x>
             <y>314</y>
             <background_color>
@@ -894,7 +894,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_222</name>
-            <pv_name>LN-BI{ACMI:A}BEAM:baseline-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}BEAM:baseline-I</pv_name>
             <x>130</x>
             <y>230</y>
             <background_color>
@@ -912,7 +912,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_224</name>
-            <pv_name>LN-BI{ACMI:A}BEAM:peak-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}BEAM:peak-I</pv_name>
             <x>130</x>
             <y>251</y>
             <background_color>
@@ -960,7 +960,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_225</name>
-            <pv_name>LN-BI{ACMI:A}BEAM:integral-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}BEAM:integral-I</pv_name>
             <x>130</x>
             <y>272</y>
             <background_color>
@@ -978,7 +978,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_226</name>
-            <pv_name>LN-BI{ACMI:A}BEAM:fwhm-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}BEAM:fwhm-I</pv_name>
             <x>130</x>
             <y>293</y>
             <background_color>
@@ -1011,7 +1011,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_227</name>
-            <pv_name>LN-BI{ACMI:A}BEAM:peak-index-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}BEAM:peak-index-I</pv_name>
             <x>130</x>
             <y>314</y>
             <background_color>
@@ -1059,7 +1059,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_233</name>
-            <pv_name>LN-BI{ACMI:A}TP2:baseline-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}TP2:baseline-I</pv_name>
             <x>359</x>
             <y>230</y>
             <background_color>
@@ -1077,7 +1077,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_234</name>
-            <pv_name>LN-BI{ACMI:A}TP2:peak-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}TP2:peak-I</pv_name>
             <x>359</x>
             <y>251</y>
             <background_color>
@@ -1145,7 +1145,7 @@ $(pv_value)</tooltip>
               <trace>
                 <name></name>
                 <x_pv></x_pv>
-                <y_pv>LN-BI{ACMI:A}beamOOW_wfvm-I</y_pv>
+                <y_pv>$(P){ACMI:$(N)}beamOOW_wfvm-I</y_pv>
                 <err_pv></err_pv>
                 <axis>0</axis>
                 <trace_type>1</trace_type>
@@ -1198,7 +1198,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_297</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP2_neg_level-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP2_neg_level-I</pv_name>
             <x>645</x>
             <y>159</y>
             <background_color>
@@ -1216,7 +1216,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_298</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP2_pos_level-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP2_pos_level-I</pv_name>
             <x>645</x>
             <y>138</y>
             <background_color>
@@ -1264,7 +1264,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_302</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP3_neg_level-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP3_neg_level-I</pv_name>
             <x>644</x>
             <y>232</y>
             <background_color>
@@ -1282,7 +1282,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_303</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP3_pos_level-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP3_pos_level-I</pv_name>
             <x>644</x>
             <y>211</y>
             <background_color>
@@ -1330,7 +1330,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_304</name>
-            <pv_name>LN-BI{ACMI:A}EE:beamaccum_limit_hr-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:beamaccum_limit_hr-I</pv_name>
             <x>284</x>
             <y>637</y>
             <background_color>
@@ -1363,7 +1363,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_305</name>
-            <pv_name>LN-BI{ACMI:A}EE:beam_HL-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:beam_HL-I</pv_name>
             <x>285</x>
             <y>658</y>
             <background_color>
@@ -1396,7 +1396,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_306</name>
-            <pv_name>LN-BI{ACMI:A}EE:baseline_LL-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:baseline_LL-I</pv_name>
             <x>286</x>
             <y>680</y>
             <height>22</height>
@@ -1415,7 +1415,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_307</name>
-            <pv_name>LN-BI{ACMI:A}EE:baseline_HL-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:baseline_HL-I</pv_name>
             <x>286</x>
             <y>702</y>
             <background_color>
@@ -1463,7 +1463,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_308</name>
-            <pv_name>LN-BI{ACMI:A}EE:charge_cal-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:charge_cal-I</pv_name>
             <x>645</x>
             <y>637</y>
             <background_color>
@@ -1496,7 +1496,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_309</name>
-            <pv_name>LN-BI{ACMI:A}EE:accum_qmin-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:accum_qmin-I</pv_name>
             <x>646</x>
             <y>658</y>
             <background_color>
@@ -1529,7 +1529,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_310</name>
-            <pv_name>LN-BI{ACMI:A}EE:accum_len-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:accum_len-I</pv_name>
             <x>646</x>
             <y>681</y>
             <background_color>
@@ -1547,7 +1547,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_311</name>
-            <pv_name>LN-BI{ACMI:A}EE:crc-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:crc-I</pv_name>
             <x>647</x>
             <y>702</y>
             <background_color>
@@ -1596,301 +1596,301 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Entry</name>
-            <pv_name>LN-BI{ACMI:A}EE:header-SP</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:header-SP</pv_name>
             <x>386</x>
             <y>37</y>
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Entry_1</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP1_pulse_delay-SP</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP1_pulse_delay-SP</pv_name>
             <x>386</x>
             <y>69</y>
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Entry_2</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP1_pulse_width-SP</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP1_pulse_width-SP</pv_name>
             <x>386</x>
             <y>89</y>
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Entry_3</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP1_adc_delay-SP</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP1_adc_delay-SP</pv_name>
             <x>386</x>
             <y>109</y>
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Entry_4</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP2_adc_delay-SP</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP2_adc_delay-SP</pv_name>
             <x>387</x>
             <y>181</y>
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Entry_5</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP2_pulse_width-SP</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP2_pulse_width-SP</pv_name>
             <x>387</x>
             <y>161</y>
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Entry_6</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP2_pulse_delay-SP</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP2_pulse_delay-SP</pv_name>
             <x>387</x>
             <y>141</y>
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Entry_7</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP3_pulse_delay-SP</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP3_pulse_delay-SP</pv_name>
             <x>387</x>
             <y>211</y>
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Entry_8</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP3_pulse_width-SP</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP3_pulse_width-SP</pv_name>
             <x>387</x>
             <y>232</y>
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Entry_9</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP3_adc_delay-SP</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP3_adc_delay-SP</pv_name>
             <x>387</x>
             <y>253</y>
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Entry_10</name>
-            <pv_name>LN-BI{ACMI:A}EE:BEAM:delay-SP</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:BEAM:delay-SP</pv_name>
             <x>387</x>
             <y>282</y>
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Entry_11</name>
-            <pv_name>LN-BI{ACMI:A}EE:COW:thresh-SP</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:COW:thresh-SP</pv_name>
             <x>387</x>
             <y>310</y>
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Entry_12</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP1_integral_LL-SP</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP1_integral_LL-SP</pv_name>
             <x>387</x>
             <y>343</y>
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Entry_13</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP1_integral_HL-SP</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP1_integral_HL-SP</pv_name>
             <x>387</x>
             <y>364</y>
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Entry_18</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP2_integral_LL-SP</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP2_integral_LL-SP</pv_name>
             <x>387</x>
             <y>385</y>
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Entry_19</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP2_integral_HL-SP</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP2_integral_HL-SP</pv_name>
             <x>387</x>
             <y>406</y>
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Entry_20</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP3_integral_LL-SP</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP3_integral_LL-SP</pv_name>
             <x>387</x>
             <y>427</y>
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Entry_21</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP3_integral_HL-SP</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP3_integral_HL-SP</pv_name>
             <x>387</x>
             <y>448</y>
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Entry_22</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP1_peak_LL-SP</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP1_peak_LL-SP</pv_name>
             <x>387</x>
             <y>481</y>
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Entry_23</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP1_peak_HL-SP</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP1_peak_HL-SP</pv_name>
             <x>387</x>
             <y>502</y>
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Entry_24</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP2_peak_LL-SP</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP2_peak_LL-SP</pv_name>
             <x>387</x>
             <y>523</y>
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Entry_25</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP3_peak_LL-SP</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP3_peak_LL-SP</pv_name>
             <x>387</x>
             <y>565</y>
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Entry_26</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP2_peak_HL-SP</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP2_peak_HL-SP</pv_name>
             <x>387</x>
             <y>544</y>
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Entry_27</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP3_peak_HL-SP</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP3_peak_HL-SP</pv_name>
             <x>387</x>
             <y>586</y>
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Entry_28</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP1_fwhm_LL-SP</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP1_fwhm_LL-SP</pv_name>
             <x>747</x>
             <y>343</y>
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Entry_29</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP1_fwhm_HL-SP</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP1_fwhm_HL-SP</pv_name>
             <x>747</x>
             <y>364</y>
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Entry_30</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP2_fwhm_LL-SP</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP2_fwhm_LL-SP</pv_name>
             <x>747</x>
             <y>385</y>
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Entry_31</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP2_fwhm_HL-SP</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP2_fwhm_HL-SP</pv_name>
             <x>747</x>
             <y>406</y>
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Entry_32</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP3_fwhm_LL-SP</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP3_fwhm_LL-SP</pv_name>
             <x>747</x>
             <y>427</y>
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Entry_33</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP3_fwhm_HL-SP</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP3_fwhm_HL-SP</pv_name>
             <x>747</x>
             <y>448</y>
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Entry_35</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP1_baseline_LL-SP</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP1_baseline_LL-SP</pv_name>
             <x>748</x>
             <y>481</y>
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Entry_36</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP1_baseline_HL-SP</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP1_baseline_HL-SP</pv_name>
             <x>748</x>
             <y>502</y>
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Entry_37</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP2_baseline_LL-SP</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP2_baseline_LL-SP</pv_name>
             <x>748</x>
             <y>523</y>
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Entry_38</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP2_baseline_HL-SP</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP2_baseline_HL-SP</pv_name>
             <x>748</x>
             <y>544</y>
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Entry_39</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP3_baseline_LL-SP</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP3_baseline_LL-SP</pv_name>
             <x>748</x>
             <y>565</y>
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Entry_40</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP3_baseline_HL-SP</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP3_baseline_HL-SP</pv_name>
             <x>748</x>
             <y>586</y>
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Entry_41</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP1_pos_level-SP</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP1_pos_level-SP</pv_name>
             <x>750</x>
             <y>68</y>
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Entry_42</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP1_neg_level-SP</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP1_neg_level-SP</pv_name>
             <x>750</x>
             <y>88</y>
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Entry_43</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP2_pos_level-SP</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP2_pos_level-SP</pv_name>
             <x>747</x>
             <y>138</y>
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Entry_44</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP2_neg_level-SP</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP2_neg_level-SP</pv_name>
             <x>747</x>
             <y>158</y>
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Entry_45</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP3_pos_level-SP</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP3_pos_level-SP</pv_name>
             <x>747</x>
             <y>211</y>
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Entry_46</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP3_neg_level-SP</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP3_neg_level-SP</pv_name>
             <x>747</x>
             <y>231</y>
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Entry_47</name>
-            <pv_name>LN-BI{ACMI:A}EE:charge_cal-SP</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:charge_cal-SP</pv_name>
             <x>748</x>
             <y>637</y>
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Entry_48</name>
-            <pv_name>LN-BI{ACMI:A}EE:accum_qmin-SP</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:accum_qmin-SP</pv_name>
             <x>748</x>
             <y>658</y>
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Entry_49</name>
-            <pv_name>LN-BI{ACMI:A}EE:accum_len-SP</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:accum_len-SP</pv_name>
             <x>748</x>
             <y>680</y>
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Entry_51</name>
-            <pv_name>LN-BI{ACMI:A}EE:beamaccum_limit_hr-SP</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:beamaccum_limit_hr-SP</pv_name>
             <x>387</x>
             <y>637</y>
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Entry_52</name>
-            <pv_name>LN-BI{ACMI:A}EE:beam_HL-SP</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:beam_HL-SP</pv_name>
             <x>387</x>
             <y>658</y>
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Entry_53</name>
-            <pv_name>LN-BI{ACMI:A}EE:baseline_LL-SP</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:baseline_LL-SP</pv_name>
             <x>388</x>
             <y>680</y>
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Entry_54</name>
-            <pv_name>LN-BI{ACMI:A}EE:baseline_HL-SP</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:baseline_HL-SP</pv_name>
             <x>388</x>
             <y>702</y>
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Entry_55</name>
-            <pv_name>LN-BI{ACMI:A}EE:crc-SP</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:crc-SP</pv_name>
             <x>750</x>
             <y>702</y>
             <format>4</format>
@@ -1942,7 +1942,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_276</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP2_peak_LL-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP2_peak_LL-I</pv_name>
             <x>284</x>
             <y>523</y>
             <background_color>
@@ -1960,7 +1960,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_277</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP1_peak_HL-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP1_peak_HL-I</pv_name>
             <x>284</x>
             <y>502</y>
             <background_color>
@@ -1978,7 +1978,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_278</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP1_peak_LL-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP1_peak_LL-I</pv_name>
             <x>284</x>
             <y>481</y>
             <background_color>
@@ -1996,7 +1996,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_279</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP2_peak_HL-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP2_peak_HL-I</pv_name>
             <x>284</x>
             <y>544</y>
             <background_color>
@@ -2044,7 +2044,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_280</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP3_peak_LL-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP3_peak_LL-I</pv_name>
             <x>284</x>
             <y>565</y>
             <background_color>
@@ -2062,7 +2062,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_281</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP3_peak_HL-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP3_peak_HL-I</pv_name>
             <x>284</x>
             <y>586</y>
             <background_color>
@@ -2140,7 +2140,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_282</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP2_fwhm_LL-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP2_fwhm_LL-I</pv_name>
             <x>644</x>
             <y>385</y>
             <background_color>
@@ -2158,7 +2158,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_283</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP1_fwhm_HL-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP1_fwhm_HL-I</pv_name>
             <x>644</x>
             <y>364</y>
             <background_color>
@@ -2176,7 +2176,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_284</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP1_fwhm_LL-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP1_fwhm_LL-I</pv_name>
             <x>644</x>
             <y>343</y>
             <background_color>
@@ -2194,7 +2194,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_285</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP2_fwhm_HL-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP2_fwhm_HL-I</pv_name>
             <x>644</x>
             <y>406</y>
             <background_color>
@@ -2242,7 +2242,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_286</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP3_fwhm_LL-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP3_fwhm_LL-I</pv_name>
             <x>644</x>
             <y>427</y>
             <background_color>
@@ -2260,7 +2260,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_287</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP3_fwhm_HL-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP3_fwhm_HL-I</pv_name>
             <x>644</x>
             <y>448</y>
             <background_color>
@@ -2338,7 +2338,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_288</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP2_baseline_LL-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP2_baseline_LL-I</pv_name>
             <x>644</x>
             <y>523</y>
             <background_color>
@@ -2356,7 +2356,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_289</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP1_baseline_HL-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP1_baseline_HL-I</pv_name>
             <x>644</x>
             <y>502</y>
             <background_color>
@@ -2374,7 +2374,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_290</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP1_baseline_LL-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP1_baseline_LL-I</pv_name>
             <x>644</x>
             <y>481</y>
             <background_color>
@@ -2392,7 +2392,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_291</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP2_baseline_HL-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP2_baseline_HL-I</pv_name>
             <x>644</x>
             <y>544</y>
             <background_color>
@@ -2441,7 +2441,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_292</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP3_baseline_LL-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP3_baseline_LL-I</pv_name>
             <x>644</x>
             <y>565</y>
             <background_color>
@@ -2459,7 +2459,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_293</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP3_baseline_HL-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP3_baseline_HL-I</pv_name>
             <x>644</x>
             <y>586</y>
             <background_color>
@@ -2492,7 +2492,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_294</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP1_neg_level-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP1_neg_level-I</pv_name>
             <x>647</x>
             <y>89</y>
             <background_color>
@@ -2510,7 +2510,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_295</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP1_pos_level-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP1_pos_level-I</pv_name>
             <x>647</x>
             <y>68</y>
             <background_color>
@@ -2588,7 +2588,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_258</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP1_adc_delay-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP1_adc_delay-I</pv_name>
             <x>284</x>
             <y>110</y>
             <background_color>
@@ -2606,7 +2606,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_259</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP1_pulse_width-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP1_pulse_width-I</pv_name>
             <x>284</x>
             <y>89</y>
             <background_color>
@@ -2624,7 +2624,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_260</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP1_pulse_delay-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP1_pulse_delay-I</pv_name>
             <x>284</x>
             <y>68</y>
             <background_color>
@@ -2642,7 +2642,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_261</name>
-            <pv_name>LN-BI{ACMI:A}EE:header-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:header-I</pv_name>
             <x>284</x>
             <y>37</y>
             <background_color>
@@ -2705,7 +2705,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_262</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP2_adc_delay-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP2_adc_delay-I</pv_name>
             <x>284</x>
             <y>181</y>
             <background_color>
@@ -2723,7 +2723,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_263</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP2_pulse_width-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP2_pulse_width-I</pv_name>
             <x>284</x>
             <y>160</y>
             <background_color>
@@ -2741,7 +2741,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_264</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP2_pulse_delay-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP2_pulse_delay-I</pv_name>
             <x>284</x>
             <y>139</y>
             <background_color>
@@ -2804,7 +2804,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_265</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP3_adc_delay-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP3_adc_delay-I</pv_name>
             <x>284</x>
             <y>253</y>
             <background_color>
@@ -2822,7 +2822,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_266</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP3_pulse_width-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP3_pulse_width-I</pv_name>
             <x>284</x>
             <y>232</y>
             <background_color>
@@ -2840,7 +2840,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_267</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP3_pulse_delay-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP3_pulse_delay-I</pv_name>
             <x>284</x>
             <y>211</y>
             <background_color>
@@ -2858,7 +2858,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_268</name>
-            <pv_name>LN-BI{ACMI:A}EE:BEAM:delay-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:BEAM:delay-I</pv_name>
             <x>284</x>
             <y>282</y>
             <background_color>
@@ -2891,7 +2891,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_269</name>
-            <pv_name>LN-BI{ACMI:A}EE:COW:thresh-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:COW:thresh-I</pv_name>
             <x>284</x>
             <y>310</y>
             <background_color>
@@ -2969,7 +2969,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_270</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP2_integral_LL-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP2_integral_LL-I</pv_name>
             <x>284</x>
             <y>385</y>
             <background_color>
@@ -2987,7 +2987,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_271</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP1_integral_HL-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP1_integral_HL-I</pv_name>
             <x>284</x>
             <y>364</y>
             <background_color>
@@ -3005,7 +3005,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_272</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP1_integral_LL-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP1_integral_LL-I</pv_name>
             <x>284</x>
             <y>343</y>
             <background_color>
@@ -3023,7 +3023,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_273</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP2_integral_HL-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP2_integral_HL-I</pv_name>
             <x>284</x>
             <y>406</y>
             <background_color>
@@ -3071,7 +3071,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_274</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP3_integral_LL-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP3_integral_LL-I</pv_name>
             <x>284</x>
             <y>427</y>
             <background_color>
@@ -3089,7 +3089,7 @@ $(pv_value)</tooltip>
           </widget>
           <widget type="textupdate" version="2.0.0">
             <name>Text Update_275</name>
-            <pv_name>LN-BI{ACMI:A}EE:TP3_integral_HL-I</pv_name>
+            <pv_name>$(P){ACMI:$(N)}EE:TP3_integral_HL-I</pv_name>
             <x>284</x>
             <y>448</y>
             <background_color>
@@ -3566,7 +3566,7 @@ $(pv_value)</tooltip>
     </tabs>
     <y>48</y>
     <width>1146</width>
-    <height>846</height>
-    <active_tab>2</active_tab>
+    <height>900</height>
+    <active_tab>1</active_tab>
   </widget>
 </display>
