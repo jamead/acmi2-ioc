@@ -42,18 +42,15 @@
 #     40         156         tp1_neg_level
 #     41         160         tp2_neg_level
 #     42         164         tp3_neg_level
-#     43         168         beamaccum_limit_hr
-#     44         172         beamhigh_limit
+#     43         168         accum_HL
+#     44         172         beam_HL
 #     45         176         baseline_low_limit
 #     46         180         baseline_high_limit
-#     47         184         charge_calibration
+#     47         184         charge_cal
 #     48         188         accum_q_min
-#     49         192         accum_length
-#     50         196         crc32_eeprom
+#     49         192         accum_len
+#     50         196         crc_eeprom
 ######################################################
-  
-
-
 
 ### EEPROM SetPoint & Readbacks ##################
 
@@ -71,8 +68,6 @@ record(ai,"$(P){ACMI:$(NO)}EE:header-I") {
     field(SCAN, "I/O Intr")
 }
 
-
-
 record(longout,"$(P){ACMI:$(NO)}EE:TP1_pulse_delay-SP") {
     field(DESC, "EEPROM write")
     field(DTYP, "PSC Single I32")
@@ -87,8 +82,6 @@ record(ai,"$(P){ACMI:$(NO)}EE:TP1_pulse_delay-I") {
     field(SCAN, "I/O Intr")
 }
 
-
-
 record(longout,"$(P){ACMI:$(NO)}EE:TP1_pulse_width-SP") {
     field(DESC, "EEPROM write")
     field(DTYP, "PSC Single I32")
@@ -96,15 +89,12 @@ record(longout,"$(P){ACMI:$(NO)}EE:TP1_pulse_width-SP") {
     field(FLNK, "$(P){ACMI:$(NO)}GoRegSingleWrite")
 }
 
-
 record(ai,"$(P){ACMI:$(NO)}EE:TP1_pulse_width-I") {
     field(DESC, "EEPROM readback")
     field(DTYP, "PSC Reg")
     field(INP , "@PSC$(NO) 52 8")
     field(SCAN, "I/O Intr")
 }
-
-
 
 record(longout,"$(P){ACMI:$(NO)}EE:TP1_adc_delay-SP") {
     field(DESC, "EEPROM write")
@@ -120,9 +110,6 @@ record(ai,"$(P){ACMI:$(NO)}EE:TP1_adc_delay-I") {
     field(SCAN, "I/O Intr")
 }
 
-
-
-
 record(longout,"$(P){ACMI:$(NO)}EE:TP2_pulse_delay-SP") {
     field(DESC, "EEPROM write")
     field(DTYP, "PSC Single I32")
@@ -136,8 +123,6 @@ record(ai,"$(P){ACMI:$(NO)}EE:TP2_pulse_delay-I") {
     field(INP , "@PSC$(NO) 52 16")
     field(SCAN, "I/O Intr")
 }
-
-
 
 record(longout,"$(P){ACMI:$(NO)}EE:TP2_pulse_width-SP") {
     field(DESC, "EEPROM write")
@@ -153,8 +138,6 @@ record(ai,"$(P){ACMI:$(NO)}EE:TP2_pulse_width-I") {
     field(SCAN, "I/O Intr")
 }
 
-
-
 record(longout,"$(P){ACMI:$(NO)}EE:TP2_adc_delay-SP") {
     field(DESC, "EEPROM write")
     field(DTYP, "PSC Single I32")
@@ -168,8 +151,6 @@ record(ai,"$(P){ACMI:$(NO)}EE:TP2_adc_delay-I") {
     field(INP , "@PSC$(NO) 52 24")
     field(SCAN, "I/O Intr")
 }
-
-
 
 record(longout,"$(P){ACMI:$(NO)}EE:TP3_pulse_delay-SP") {
     field(DESC, "EEPROM write")
@@ -185,8 +166,6 @@ record(ai,"$(P){ACMI:$(NO)}EE:TP3_pulse_delay-I") {
     field(SCAN, "I/O Intr")
 }
 
-
-
 record(longout,"$(P){ACMI:$(NO)}EE:TP3_pulse_width-SP") {
     field(DESC, "EEPROM write")
     field(DTYP, "PSC Single I32")
@@ -200,8 +179,6 @@ record(ai,"$(P){ACMI:$(NO)}EE:TP3_pulse_width-I") {
     field(INP , "@PSC$(NO) 52 32")
     field(SCAN, "I/O Intr")
 }
-
-
 
 record(longout,"$(P){ACMI:$(NO)}EE:TP3_adc_delay-SP") {
     field(DESC, "EEPROM write")
@@ -217,39 +194,33 @@ record(ai,"$(P){ACMI:$(NO)}EE:TP3_adc_delay-I") {
     field(SCAN, "I/O Intr")
 }
 
-
-
-record(longout,"$(P){ACMI:$(NO)}EE:BEAM:delay-SP") {
+record(longout,"$(P){ACMI:$(NO)}EE:beam_delay-SP") {
     field(DESC, "EEPROM write")
     field(DTYP, "PSC Single I32")
     field(OUT , "@PSC$(NO) 2 40")
     field(FLNK, "$(P){ACMI:$(NO)}GoRegSingleWrite")
 }
 
-record(ai,"$(P){ACMI:$(NO)}EE:BEAM:delay-I") {
+record(ai,"$(P){ACMI:$(NO)}EE:beam_delay-I") {
     field(DESC, "EEPROM readback")
     field(DTYP, "PSC Reg")
     field(INP , "@PSC$(NO) 52 40")
     field(SCAN, "I/O Intr")
 }
 
-
-
-record(longout,"$(P){ACMI:$(NO)}EE:COW:thresh-SP") {
+record(longout,"$(P){ACMI:$(NO)}EE:cow_thresh-SP") {
     field(DESC, "EEPROM write")
     field(DTYP, "PSC Single I32")
     field(OUT , "@PSC$(NO) 2 44")
     field(FLNK, "$(P){ACMI:$(NO)}GoRegSingleWrite")
 }
 
-record(ai,"$(P){ACMI:$(NO)}EE:COW:thresh-I") {
+record(ai,"$(P){ACMI:$(NO)}EE:cow_thresh-I") {
     field(DESC, "EEPROM readback")
     field(DTYP, "PSC Reg")
     field(INP , "@PSC$(NO) 52 44")
     field(SCAN, "I/O Intr")
 }
-
-
 
 record(longout,"$(P){ACMI:$(NO)}EE:TP1_integral_LL-SP") {
     field(DESC, "EEPROM write")
@@ -265,8 +236,6 @@ record(ai,"$(P){ACMI:$(NO)}EE:TP1_integral_LL-I") {
     field(SCAN, "I/O Intr")
 }
 
-
-
 record(longout,"$(P){ACMI:$(NO)}EE:TP1_integral_HL-SP") {
     field(DESC, "EEPROM write")
     field(DTYP, "PSC Single I32")
@@ -280,8 +249,6 @@ record(ai,"$(P){ACMI:$(NO)}EE:TP1_integral_HL-I") {
     field(INP , "@PSC$(NO) 52 52")
     field(SCAN, "I/O Intr")
 }
-
-
 
 record(longout,"$(P){ACMI:$(NO)}EE:TP2_integral_LL-SP") {
     field(DESC, "EEPROM write")
@@ -297,8 +264,6 @@ record(ai,"$(P){ACMI:$(NO)}EE:TP2_integral_LL-I") {
     field(SCAN, "I/O Intr")
 }
 
-
-
 record(longout,"$(P){ACMI:$(NO)}EE:TP2_integral_HL-SP") {
     field(DESC, "EEPROM write")
     field(DTYP, "PSC Single I32")
@@ -312,8 +277,6 @@ record(ai,"$(P){ACMI:$(NO)}EE:TP2_integral_HL-I") {
     field(INP , "@PSC$(NO) 52 60")
     field(SCAN, "I/O Intr")
 }
-
-
 
 record(longout,"$(P){ACMI:$(NO)}EE:TP3_integral_LL-SP") {
     field(DESC, "EEPROM write")
@@ -329,8 +292,6 @@ record(ai,"$(P){ACMI:$(NO)}EE:TP3_integral_LL-I") {
     field(SCAN, "I/O Intr")
 }
 
-
-
 record(longout,"$(P){ACMI:$(NO)}EE:TP3_integral_HL-SP") {
     field(DESC, "EEPROM write")
     field(DTYP, "PSC Single I32")
@@ -344,8 +305,6 @@ record(ai,"$(P){ACMI:$(NO)}EE:TP3_integral_HL-I") {
     field(INP , "@PSC$(NO) 52 68")
     field(SCAN, "I/O Intr")
 }
-
-
 
 record(longout,"$(P){ACMI:$(NO)}EE:TP1_peak_LL-SP") {
     field(DESC, "EEPROM write")
@@ -361,8 +320,6 @@ record(ai,"$(P){ACMI:$(NO)}EE:TP1_peak_LL-I") {
     field(SCAN, "I/O Intr")
 }
 
-
-
 record(longout,"$(P){ACMI:$(NO)}EE:TP1_peak_HL-SP") {
     field(DESC, "EEPROM write")
     field(DTYP, "PSC Single I32")
@@ -376,8 +333,6 @@ record(ai,"$(P){ACMI:$(NO)}EE:TP1_peak_HL-I") {
     field(INP , "@PSC$(NO) 52 76")
     field(SCAN, "I/O Intr")
 }
-
-
 
 record(longout,"$(P){ACMI:$(NO)}EE:TP2_peak_LL-SP") {
     field(DESC, "EEPROM write")
@@ -393,8 +348,6 @@ record(ai,"$(P){ACMI:$(NO)}EE:TP2_peak_LL-I") {
     field(SCAN, "I/O Intr")
 }
 
-
-
 record(longout,"$(P){ACMI:$(NO)}EE:TP2_peak_HL-SP") {
     field(DESC, "EEPROM write")
     field(DTYP, "PSC Single I32")
@@ -408,8 +361,6 @@ record(ai,"$(P){ACMI:$(NO)}EE:TP2_peak_HL-I") {
     field(INP , "@PSC$(NO) 52 84")
     field(SCAN, "I/O Intr")
 }
-
-
 
 record(longout,"$(P){ACMI:$(NO)}EE:TP3_peak_LL-SP") {
     field(DESC, "EEPROM write")
@@ -425,8 +376,6 @@ record(ai,"$(P){ACMI:$(NO)}EE:TP3_peak_LL-I") {
     field(SCAN, "I/O Intr")
 }
 
-
-
 record(longout,"$(P){ACMI:$(NO)}EE:TP3_peak_HL-SP") {
     field(DESC, "EEPROM write")
     field(DTYP, "PSC Single I32")
@@ -440,8 +389,6 @@ record(ai,"$(P){ACMI:$(NO)}EE:TP3_peak_HL-I") {
     field(INP , "@PSC$(NO) 52 92")
     field(SCAN, "I/O Intr")
 }
-
-
 
 record(longout,"$(P){ACMI:$(NO)}EE:TP1_fwhm_LL-SP") {
     field(DESC, "EEPROM write")
@@ -457,8 +404,6 @@ record(ai,"$(P){ACMI:$(NO)}EE:TP1_fwhm_LL-I") {
     field(SCAN, "I/O Intr")
 }
 
-
-
 record(longout,"$(P){ACMI:$(NO)}EE:TP1_fwhm_HL-SP") {
     field(DESC, "EEPROM write")
     field(DTYP, "PSC Single I32")
@@ -472,8 +417,6 @@ record(ai,"$(P){ACMI:$(NO)}EE:TP1_fwhm_HL-I") {
     field(INP , "@PSC$(NO) 52 100")
     field(SCAN, "I/O Intr")
 }
-
-
 
 record(longout,"$(P){ACMI:$(NO)}EE:TP2_fwhm_LL-SP") {
     field(DESC, "EEPROM write")
@@ -489,8 +432,6 @@ record(ai,"$(P){ACMI:$(NO)}EE:TP2_fwhm_LL-I") {
     field(SCAN, "I/O Intr")
 }
 
-
-
 record(longout,"$(P){ACMI:$(NO)}EE:TP2_fwhm_HL-SP") {
     field(DESC, "EEPROM write")
     field(DTYP, "PSC Single I32")
@@ -504,8 +445,6 @@ record(ai,"$(P){ACMI:$(NO)}EE:TP2_fwhm_HL-I") {
     field(INP , "@PSC$(NO) 52 108")
     field(SCAN, "I/O Intr")
 }
-
-
 
 record(longout,"$(P){ACMI:$(NO)}EE:TP3_fwhm_LL-SP") {
     field(DESC, "EEPROM write")
@@ -521,8 +460,6 @@ record(ai,"$(P){ACMI:$(NO)}EE:TP3_fwhm_LL-I") {
     field(SCAN, "I/O Intr")
 }
 
-
-
 record(longout,"$(P){ACMI:$(NO)}EE:TP3_fwhm_HL-SP") {
     field(DESC, "EEPROM write")
     field(DTYP, "PSC Single I32")
@@ -536,8 +473,6 @@ record(ai,"$(P){ACMI:$(NO)}EE:TP3_fwhm_HL-I") {
     field(INP , "@PSC$(NO) 52 116")
     field(SCAN, "I/O Intr")
 }
-
-
 
 record(longout,"$(P){ACMI:$(NO)}EE:TP1_baseline_LL-SP") {
     field(DESC, "EEPROM write")
@@ -553,8 +488,6 @@ record(ai,"$(P){ACMI:$(NO)}EE:TP1_baseline_LL-I") {
     field(SCAN, "I/O Intr")
 }
 
-
-
 record(longout,"$(P){ACMI:$(NO)}EE:TP1_baseline_HL-SP") {
     field(DESC, "EEPROM write")
     field(DTYP, "PSC Single I32")
@@ -568,8 +501,6 @@ record(ai,"$(P){ACMI:$(NO)}EE:TP1_baseline_HL-I") {
     field(INP , "@PSC$(NO) 52 124")
     field(SCAN, "I/O Intr")
 }
-
-
 
 record(longout,"$(P){ACMI:$(NO)}EE:TP2_baseline_LL-SP") {
     field(DESC, "EEPROM write")
@@ -585,8 +516,6 @@ record(ai,"$(P){ACMI:$(NO)}EE:TP2_baseline_LL-I") {
     field(SCAN, "I/O Intr")
 }
 
-
-
 record(longout,"$(P){ACMI:$(NO)}EE:TP2_baseline_HL-SP") {
     field(DESC, "EEPROM write")
     field(DTYP, "PSC Single I32")
@@ -600,8 +529,6 @@ record(ai,"$(P){ACMI:$(NO)}EE:TP2_baseline_HL-I") {
     field(INP , "@PSC$(NO) 52 132")
     field(SCAN, "I/O Intr")
 }
-
-
 
 record(longout,"$(P){ACMI:$(NO)}EE:TP3_baseline_LL-SP") {
     field(DESC, "EEPROM write")
@@ -617,8 +544,6 @@ record(ai,"$(P){ACMI:$(NO)}EE:TP3_baseline_LL-I") {
     field(SCAN, "I/O Intr")
 }
 
-
-
 record(longout,"$(P){ACMI:$(NO)}EE:TP3_baseline_HL-SP") {
     field(DESC, "EEPROM write")
     field(DTYP, "PSC Single I32")
@@ -633,8 +558,6 @@ record(ai,"$(P){ACMI:$(NO)}EE:TP3_baseline_HL-I") {
     field(SCAN, "I/O Intr")
 }
 
-
-
 record(longout,"$(P){ACMI:$(NO)}EE:TP1_pos_level-SP") {
     field(DESC, "EEPROM write")
     field(DTYP, "PSC Single I32")
@@ -648,7 +571,6 @@ record(ai,"$(P){ACMI:$(NO)}EE:TP1_pos_level-I") {
     field(INP , "@PSC$(NO) 52 144")
     field(SCAN, "I/O Intr")
 }
-
 
 record(longout,"$(P){ACMI:$(NO)}EE:TP2_pos_level-SP") {
     field(DESC, "EEPROM write")
@@ -678,7 +600,6 @@ record(ai,"$(P){ACMI:$(NO)}EE:TP3_pos_level-I") {
     field(SCAN, "I/O Intr")
 }
 
-
 record(longout,"$(P){ACMI:$(NO)}EE:TP1_neg_level-SP") {
     field(DESC, "EEPROM write")
     field(DTYP, "PSC Single I32")
@@ -692,7 +613,6 @@ record(ai,"$(P){ACMI:$(NO)}EE:TP1_neg_level-I") {
     field(INP , "@PSC$(NO) 52 156")
     field(SCAN, "I/O Intr")
 }
-
 
 record(longout,"$(P){ACMI:$(NO)}EE:TP2_neg_level-SP") {
     field(DESC, "EEPROM write")
@@ -708,7 +628,6 @@ record(ai,"$(P){ACMI:$(NO)}EE:TP2_neg_level-I") {
     field(SCAN, "I/O Intr")
 }
 
-
 record(longout,"$(P){ACMI:$(NO)}EE:TP3_neg_level-SP") {
     field(DESC, "EEPROM write")
     field(DTYP, "PSC Single I32")
@@ -723,23 +642,19 @@ record(ai,"$(P){ACMI:$(NO)}EE:TP3_neg_level-I") {
     field(SCAN, "I/O Intr")
 }
 
-
-
-record(longout,"$(P){ACMI:$(NO)}EE:beamaccum_limit_hr-SP") {
+record(longout,"$(P){ACMI:$(NO)}EE:accum_HL-SP") {
     field(DESC, "EEPROM write")
     field(DTYP, "PSC Single I32")
     field(OUT , "@PSC$(NO) 2 168")
     field(FLNK, "$(P){ACMI:$(NO)}GoRegSingleWrite")
 }
 
-record(ai,"$(P){ACMI:$(NO)}EE:beamaccum_limit_hr-I") {
+record(ai,"$(P){ACMI:$(NO)}EE:accum_HL-I") {
     field(DESC, "EEPROM readback")
     field(DTYP, "PSC Reg")
     field(INP , "@PSC$(NO) 52 168")
     field(SCAN, "I/O Intr")
 }
-
-
 
 record(longout,"$(P){ACMI:$(NO)}EE:beam_HL-SP") {
     field(DESC, "EEPROM write")
@@ -755,8 +670,6 @@ record(ai,"$(P){ACMI:$(NO)}EE:beam_HL-I") {
     field(SCAN, "I/O Intr")
 }
 
-
-
 record(longout,"$(P){ACMI:$(NO)}EE:baseline_LL-SP") {
     field(DESC, "EEPROM write")
     field(DTYP, "PSC Single I32")
@@ -770,8 +683,6 @@ record(ai,"$(P){ACMI:$(NO)}EE:baseline_LL-I") {
     field(INP , "@PSC$(NO) 52 176")
     field(SCAN, "I/O Intr")
 }
-
-
 
 record(longout,"$(P){ACMI:$(NO)}EE:baseline_HL-SP") {
     field(DESC, "EEPROM write")
@@ -787,8 +698,6 @@ record(ai,"$(P){ACMI:$(NO)}EE:baseline_HL-I") {
     field(SCAN, "I/O Intr")
 }
 
-
-
 record(longout,"$(P){ACMI:$(NO)}EE:charge_cal-SP") {
     field(DESC, "EEPROM write")
     field(DTYP, "PSC Single I32")
@@ -802,8 +711,6 @@ record(ai,"$(P){ACMI:$(NO)}EE:charge_cal-I") {
     field(INP , "@PSC$(NO) 52 184")
     field(SCAN, "I/O Intr")
 }
-
-
 
 record(longout,"$(P){ACMI:$(NO)}EE:accum_qmin-SP") {
     field(DESC, "EEPROM write")
@@ -819,8 +726,6 @@ record(ai,"$(P){ACMI:$(NO)}EE:accum_qmin-I") {
     field(SCAN, "I/O Intr")
 }
 
-
-
 record(longout,"$(P){ACMI:$(NO)}EE:accum_len-SP") {
     field(DESC, "EEPROM write")
     field(DTYP, "PSC Single I32")
@@ -835,22 +740,514 @@ record(ai,"$(P){ACMI:$(NO)}EE:accum_len-I") {
     field(SCAN, "I/O Intr")
 }
 
-
-
-record(longout,"$(P){ACMI:$(NO)}EE:crc-SP") {
+record(longout,"$(P){ACMI:$(NO)}EE:crc_eeprom-SP") {
     field(DESC, "EEPROM write")
     field(DTYP, "PSC Single I32")
     field(OUT , "@PSC$(NO) 2 196")
     field(FLNK, "$(P){ACMI:$(NO)}GoRegSingleWrite")
 }
 
-record(ai,"$(P){ACMI:$(NO)}EE:crc-I") {
+record(ai,"$(P){ACMI:$(NO)}EE:crc_eeprom-I") {
     field(DESC, "EEPROM readback")
     field(DTYP, "PSC Reg")
     field(INP , "@PSC$(NO) 52 196")
     field(SCAN, "I/O Intr")
 }
 
+#####################################################
+#
+#  Load and Save PV for EEPROM Settings
+#
+#####################################################
 
+record(longin,"$(P){ACMI:$(NO)}EE:save-SP") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+  field(FLNK,"$(P){ACMI:$(NO)}EE:saveCheck-I.PROC")
+}
 
+record(longin,"$(P){ACMI:$(NO)}EE:load-SP") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+  field(FLNK,"$(P){ACMI:$(NO)}EE:loadCheck-I.PROC")
+}
+
+record(calcout,"$(P){ACMI:$(NO)}EE:saveCheck-I"){
+    field(INPA, "$(P){ACMI:$(NO)}EE:save-SP")
+    field(CALC, "A=1")
+    field(OOPT, "Transition To Non-zero")
+    field(OUT,  "$(P){ACMI:$(NO)}TP1array-Sub.PROC PP")
+}
+
+record(calcout,"$(P){ACMI:$(NO)}EE:loadCheck-I"){
+    field(INPA, "$(P){ACMI:$(NO)}EE:load-SP")
+    field(CALC, "A=1")
+    field(OOPT, "Transition To Non-zero")
+    field(OUT,  "$(P){ACMI:$(NO)}LoadFile-Sub.PROC PP")
+}
+
+record(waveform,"$(P){ACMI:$(NO)}EE:TP1-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"EEPROM Settings for TP1")
+  field(NELM,"13")
+  field(FTVL,"LONG")
+}
+
+record(waveform,"$(P){ACMI:$(NO)}EE:TP2-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"EEPROM Settings for TP2")
+  field(NELM,"13")
+  field(FTVL,"LONG")
+}
+
+record(waveform,"$(P){ACMI:$(NO)}EE:TP3-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"EEPROM Settings for TP3")
+  field(NELM,"13")
+  field(FTVL,"LONG")
+}
+
+record(waveform,"$(P){ACMI:$(NO)}EE:BM-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"EEPROM Settings for TP3")
+  field(NELM,"11")
+  field(FTVL,"LONG")
+}
+
+record(aSub,"$(P){ACMI:$(NO)}TP1array-Sub"){
+    field(SNAM,"TParraySub")
+    field(FLNK,"$(P){ACMI:$(NO)}TP2array-Sub.PROC")
+
+    field(FTA,  "LONG")
+    field(NOA,  "1")
+    field(INPA, "$(P){ACMI:$(NO)}EE:TP1_pulse_delay-I")
+    field(FTB,  "LONG")
+    field(NOB,  "1")
+    field(INPB, "$(P){ACMI:$(NO)}EE:TP1_pulse_width-I")
+    field(FTC,  "LONG")
+    field(NOC,  "1")
+    field(INPC, "$(P){ACMI:$(NO)}EE:TP1_pos_level-I")
+    field(FTD,  "LONG")
+    field(NOD,  "1")
+    field(INPD, "$(P){ACMI:$(NO)}EE:TP1_neg_level-I")
+    field(FTE,  "LONG")
+    field(NOE,  "1")
+    field(INPE, "$(P){ACMI:$(NO)}EE:TP1_adc_delay-I")
+    field(FTF,  "LONG")
+    field(NOF,  "1")
+    field(INPF, "$(P){ACMI:$(NO)}EE:TP1_integral_HL-I")
+    field(FTG,  "LONG")
+    field(NOG,  "1")
+    field(INPG, "$(P){ACMI:$(NO)}EE:TP1_integral_LL-I")
+    field(FTH,  "LONG")
+    field(NOH,  "1")
+    field(INPH, "$(P){ACMI:$(NO)}EE:TP1_peak_HL-I")
+    field(FTI,  "LONG")
+    field(NOI,  "1")
+    field(INPI, "$(P){ACMI:$(NO)}EE:TP1_peak_LL-I")
+    field(FTJ,  "LONG")
+    field(NOJ,  "1")
+    field(INPJ, "$(P){ACMI:$(NO)}EE:TP1_fwhm_HL-I")
+    field(FTK,  "LONG")
+    field(NOK,  "1")
+    field(INPK, "$(P){ACMI:$(NO)}EE:TP1_fwhm_LL-I")
+    field(FTL,  "LONG")
+    field(NOL,  "1")
+    field(INPL, "$(P){ACMI:$(NO)}EE:TP1_baseline_HL-I")
+    field(FTM,  "LONG")
+    field(NOM,  "1")
+    field(INPM, "$(P){ACMI:$(NO)}EE:TP1_baseline_LL-I")
+
+    field(FTVA,  "LONG")
+    field(NOVA,  "13")
+    field(OUTA, "$(P){ACMI:$(NO)}EE:TP1-Wfm PP")
+    field(FTVB,  "LONG")
+    field(NOVB,  "1")
+    field(OUTB, "$(P){ACMI:$(NO)}EE:save-SP PP")
+}
+
+record(aSub,"$(P){ACMI:$(NO)}TP2array-Sub"){
+    field(SNAM,"TParraySub")
+    field(FLNK,"$(P){ACMI:$(NO)}TP3array-Sub.PROC")
+
+    field(FTA,  "LONG")
+    field(NOA,  "1")
+    field(INPA, "$(P){ACMI:$(NO)}EE:TP2_pulse_delay-I")
+    field(FTB,  "LONG")
+    field(NOB,  "1")
+    field(INPB, "$(P){ACMI:$(NO)}EE:TP2_pulse_width-I")
+    field(FTC,  "LONG")
+    field(NOC,  "1")
+    field(INPC, "$(P){ACMI:$(NO)}EE:TP2_pos_level-I")
+    field(FTD,  "LONG")
+    field(NOD,  "1")
+    field(INPD, "$(P){ACMI:$(NO)}EE:TP2_neg_level-I")
+    field(FTE,  "LONG")
+    field(NOE,  "1")
+    field(INPE, "$(P){ACMI:$(NO)}EE:TP2_adc_delay-I")
+    field(FTF,  "LONG")
+    field(NOF,  "1")
+    field(INPF, "$(P){ACMI:$(NO)}EE:TP2_integral_HL-I")
+    field(FTG,  "LONG")
+    field(NOG,  "1")
+    field(INPG, "$(P){ACMI:$(NO)}EE:TP2_integral_LL-I")
+    field(FTH,  "LONG")
+    field(NOH,  "1")
+    field(INPH, "$(P){ACMI:$(NO)}EE:TP2_peak_HL-I")
+    field(FTI,  "LONG")
+    field(NOI,  "1")
+    field(INPI, "$(P){ACMI:$(NO)}EE:TP2_peak_LL-I")
+    field(FTJ,  "LONG")
+    field(NOJ,  "1")
+    field(INPJ, "$(P){ACMI:$(NO)}EE:TP2_fwhm_HL-I")
+    field(FTK,  "LONG")
+    field(NOK,  "1")
+    field(INPK, "$(P){ACMI:$(NO)}EE:TP2_fwhm_LL-I")
+    field(FTL,  "LONG")
+    field(NOL,  "1")
+    field(INPL, "$(P){ACMI:$(NO)}EE:TP2_baseline_HL-I")
+    field(FTM,  "LONG")
+    field(NOM,  "1")
+    field(INPM, "$(P){ACMI:$(NO)}EE:TP2_baseline_LL-I")
+
+    field(FTVA,  "LONG")
+    field(NOVA,  "13")
+    field(OUTA, "$(P){ACMI:$(NO)}EE:TP2-Wfm PP")
+    field(FTVB,  "LONG")
+    field(NOVB,  "1")
+    field(OUTB, "$(P){ACMI:$(NO)}EE:save-SP PP")
+}
+
+record(aSub,"$(P){ACMI:$(NO)}TP3array-Sub"){
+    field(SNAM,"TParraySub")
+    field(FLNK,"$(P){ACMI:$(NO)}BMarray-Sub.PROC")
+
+    field(FTA,  "LONG")
+    field(NOA,  "1")
+    field(INPA, "$(P){ACMI:$(NO)}EE:TP3_pulse_delay-I")
+    field(FTB,  "LONG")
+    field(NOB,  "1")
+    field(INPB, "$(P){ACMI:$(NO)}EE:TP3_pulse_width-I")
+    field(FTC,  "LONG")
+    field(NOC,  "1")
+    field(INPC, "$(P){ACMI:$(NO)}EE:TP3_pos_level-I")
+    field(FTD,  "LONG")
+    field(NOD,  "1")
+    field(INPD, "$(P){ACMI:$(NO)}EE:TP3_neg_level-I")
+    field(FTE,  "LONG")
+    field(NOE,  "1")
+    field(INPE, "$(P){ACMI:$(NO)}EE:TP3_adc_delay-I")
+    field(FTF,  "LONG")
+    field(NOF,  "1")
+    field(INPF, "$(P){ACMI:$(NO)}EE:TP3_integral_HL-I")
+    field(FTG,  "LONG")
+    field(NOG,  "1")
+    field(INPG, "$(P){ACMI:$(NO)}EE:TP3_integral_LL-I")
+    field(FTH,  "LONG")
+    field(NOH,  "1")
+    field(INPH, "$(P){ACMI:$(NO)}EE:TP3_peak_HL-I")
+    field(FTI,  "LONG")
+    field(NOI,  "1")
+    field(INPI, "$(P){ACMI:$(NO)}EE:TP3_peak_LL-I")
+    field(FTJ,  "LONG")
+    field(NOJ,  "1")
+    field(INPJ, "$(P){ACMI:$(NO)}EE:TP3_fwhm_HL-I")
+    field(FTK,  "LONG")
+    field(NOK,  "1")
+    field(INPK, "$(P){ACMI:$(NO)}EE:TP3_fwhm_LL-I")
+    field(FTL,  "LONG")
+    field(NOL,  "1")
+    field(INPL, "$(P){ACMI:$(NO)}EE:TP3_baseline_HL-I")
+    field(FTM,  "LONG")
+    field(NOM,  "1")
+    field(INPM, "$(P){ACMI:$(NO)}EE:TP3_baseline_LL-I")
+
+    field(FTVA,  "LONG")
+    field(NOVA,  "13")
+    field(OUTA, "$(P){ACMI:$(NO)}EE:TP3-Wfm PP")
+    field(FTVB,  "LONG")
+    field(NOVB,  "1")
+    field(OUTB, "$(P){ACMI:$(NO)}EE:save-SP PP")
+}
+
+record(aSub,"$(P){ACMI:$(NO)}BMarray-Sub"){
+    field(SNAM,"BMarraySub")
+    field(FLNK,"$(P){ACMI:$(NO)}WriteFile-Sub.PROC")
+
+    field(FTA,  "LONG")
+    field(NOA,  "1")
+    field(INPA, "$(P){ACMI:$(NO)}EE:beam_delay-I")
+    field(FTB,  "LONG")
+    field(NOB,  "1")
+    field(INPB, "$(P){ACMI:$(NO)}EE:beam_HL-I")
+    field(FTC,  "LONG")
+    field(NOC,  "1")
+    field(INPC, "$(P){ACMI:$(NO)}EE:baseline_HL-I")
+    field(FTD,  "LONG")
+    field(NOD,  "1")
+    field(INPD, "$(P){ACMI:$(NO)}EE:baseline_LL-I")
+    field(FTE,  "LONG")
+    field(NOE,  "1")
+    field(INPE, "$(P){ACMI:$(NO)}EE:accum_qmin-I")
+    field(FTF,  "LONG")
+    field(NOF,  "1")
+    field(INPF, "$(P){ACMI:$(NO)}EE:accum_len-I")
+    field(FTG,  "LONG")
+    field(NOG,  "1")
+    field(INPG, "$(P){ACMI:$(NO)}EE:accum_HL-I")
+    field(FTH,  "LONG")
+    field(NOH,  "1")
+    field(INPH, "$(P){ACMI:$(NO)}EE:cow_thresh-I")
+    field(FTI,  "LONG")
+    field(NOI,  "1")
+    field(INPI, "$(P){ACMI:$(NO)}EE:charge_cal-I")
+    field(FTJ,  "LONG")
+    field(NOJ,  "1")
+    field(INPJ, "$(P){ACMI:$(NO)}EE:header-I")
+    field(FTK,  "LONG")
+    field(NOK,  "1")
+    field(INPK, "$(P){ACMI:$(NO)}crc_artix-I")
+
+    field(FTVA,  "LONG")
+    field(NOVA,  "11")
+    field(OUTA, "$(P){ACMI:$(NO)}EE:BM-Wfm PP")
+}
+
+record(aSub,"$(P){ACMI:$(NO)}WriteFile-Sub"){
+    field(SNAM,"WriteFileSub")
+
+    field(FTA,  "LONG")
+    field(NOA,  "13")
+    field(INPA, "$(P){ACMI:$(NO)}EE:TP1-Wfm")
+    field(FTB,  "LONG")
+    field(NOB,  "13")
+    field(INPB, "$(P){ACMI:$(NO)}EE:TP2-Wfm")
+    field(FTC,  "LONG")
+    field(NOC,  "13")
+    field(INPC, "$(P){ACMI:$(NO)}EE:TP3-Wfm")
+    field(FTD,  "LONG")
+    field(NOD,  "11")
+    field(INPD, "$(P){ACMI:$(NO)}EE:BM-Wfm")
+}
+
+record(aSub,"$(P){ACMI:$(NO)}LoadFile-Sub"){
+    field(SNAM,"LoadFileSub")
+    field(FLNK,"$(P){ACMI:$(NO)}TP1write-Sub")
+
+    field(FTVA,  "LONG")
+    field(NOVA,  "13")
+    field(OUTA, "$(P){ACMI:$(NO)}EE:TP1-Wfm PP")
+    field(FTVB,  "LONG")
+    field(NOVB,  "13")
+    field(OUTB, "$(P){ACMI:$(NO)}EE:TP2-Wfm PP")
+    field(FTVC,  "LONG")
+    field(NOVC,  "13")
+    field(OUTC, "$(P){ACMI:$(NO)}EE:TP3-Wfm PP")
+    field(FTVD,  "LONG")
+    field(NOVD,  "11")
+    field(OUTD, "$(P){ACMI:$(NO)}EE:BM-Wfm PP")
+    field(FTVE,  "LONG")
+    field(NOVE,  "1")
+    field(OUTE, "$(P){ACMI:$(NO)}EE:load-SP PP")
+}
+
+record(aSub,"$(P){ACMI:$(NO)}TP1write-Sub"){
+    field(SNAM,"TPwriteSub")
+    field(FLNK,"$(P){ACMI:$(NO)}TP2write-Sub.PROC")
+    
+    field(FTA,  "LONG")
+    field(NOA,  "13")
+    field(INPA, "$(P){ACMI:$(NO)}EE:TP1-Wfm")
+
+    field(FTVA,  "LONG")
+    field(NOVA,  "1")
+    field(OUTA, "$(P){ACMI:$(NO)}EE:TP1_pulse_delay-SP PP")
+    field(FTVB,  "LONG")
+    field(NOVB,  "1")
+    field(OUTB, "$(P){ACMI:$(NO)}EE:TP1_pulse_width-SP PP")
+    field(FTVC,  "LONG")
+    field(NOVC,  "1")
+    field(OUTC, "$(P){ACMI:$(NO)}EE:TP1_pos_level-SP PP")
+    field(FTVD,  "LONG")
+    field(NOVD,  "1")
+    field(OUTD, "$(P){ACMI:$(NO)}EE:TP1_neg_level-SP PP")
+    field(FTVE,  "LONG")
+    field(NOVE,  "1")
+    field(OUTE, "$(P){ACMI:$(NO)}EE:TP1_adc_delay-SP PP")
+    field(FTVF,  "LONG")
+    field(NOVF,  "1")
+    field(OUTF, "$(P){ACMI:$(NO)}EE:TP1_integral_HL-SP PP")
+    field(FTVG,  "LONG")
+    field(NOVG,  "1")
+    field(OUTG, "$(P){ACMI:$(NO)}EE:TP1_integral_LL-SP PP")
+    field(FTVH,  "LONG")
+    field(NOVH,  "1")
+    field(OUTH, "$(P){ACMI:$(NO)}EE:TP1_peak_HL-SP PP")
+    field(FTVI,  "LONG")
+    field(NOVI,  "1")
+    field(OUTI, "$(P){ACMI:$(NO)}EE:TP1_peak_LL-SP PP")
+    field(FTVJ,  "LONG")
+    field(NOVJ,  "1")
+    field(OUTJ, "$(P){ACMI:$(NO)}EE:TP1_fwhm_HL-SP PP")
+    field(FTVK,  "LONG")
+    field(NOVK,  "1")
+    field(OUTK, "$(P){ACMI:$(NO)}EE:TP1_fwhm_LL-SP PP")
+    field(FTVL,  "LONG")
+    field(NOVL,  "1")
+    field(OUTL, "$(P){ACMI:$(NO)}EE:TP1_baseline_HL-SP PP")
+    field(FTVM,  "LONG")
+    field(NOVM,  "1")
+    field(OUTM, "$(P){ACMI:$(NO)}EE:TP1_baseline_LL-SP PP")
+    field(FTVN,  "LONG")
+    field(NOVN,  "1")
+    field(OUTN, "$(P){ACMI:$(NO)}EE:load-SP PP")
+}
+
+record(aSub,"$(P){ACMI:$(NO)}TP2write-Sub"){
+    field(SNAM,"TPwriteSub")
+    field(FLNK,"$(P){ACMI:$(NO)}TP3write-Sub.PROC")
+    
+    field(FTA,  "LONG")
+    field(NOA,  "13")
+    field(INPA, "$(P){ACMI:$(NO)}EE:TP2-Wfm")
+
+    field(FTVA,  "LONG")
+    field(NOVA,  "1")
+    field(OUTA, "$(P){ACMI:$(NO)}EE:TP2_pulse_delay-SP PP")
+    field(FTVB,  "LONG")
+    field(NOVB,  "1")
+    field(OUTB, "$(P){ACMI:$(NO)}EE:TP2_pulse_width-SP PP")
+    field(FTVC,  "LONG")
+    field(NOVC,  "1")
+    field(OUTC, "$(P){ACMI:$(NO)}EE:TP2_pos_level-SP PP")
+    field(FTVD,  "LONG")
+    field(NOVD,  "1")
+    field(OUTD, "$(P){ACMI:$(NO)}EE:TP2_neg_level-SP PP")
+    field(FTVE,  "LONG")
+    field(NOVE,  "1")
+    field(OUTE, "$(P){ACMI:$(NO)}EE:TP2_adc_delay-SP PP")
+    field(FTVF,  "LONG")
+    field(NOVF,  "1")
+    field(OUTF, "$(P){ACMI:$(NO)}EE:TP2_integral_HL-SP PP")
+    field(FTVG,  "LONG")
+    field(NOVG,  "1")
+    field(OUTG, "$(P){ACMI:$(NO)}EE:TP2_integral_LL-SP PP")
+    field(FTVH,  "LONG")
+    field(NOVH,  "1")
+    field(OUTH, "$(P){ACMI:$(NO)}EE:TP2_peak_HL-SP PP")
+    field(FTVI,  "LONG")
+    field(NOVI,  "1")
+    field(OUTI, "$(P){ACMI:$(NO)}EE:TP2_peak_LL-SP PP")
+    field(FTVJ,  "LONG")
+    field(NOVJ,  "1")
+    field(OUTJ, "$(P){ACMI:$(NO)}EE:TP2_fwhm_HL-SP PP")
+    field(FTVK,  "LONG")
+    field(NOVK,  "1")
+    field(OUTK, "$(P){ACMI:$(NO)}EE:TP2_fwhm_LL-SP PP")
+    field(FTVL,  "LONG")
+    field(NOVL,  "1")
+    field(OUTL, "$(P){ACMI:$(NO)}EE:TP2_baseline_HL-SP PP")
+    field(FTVM,  "LONG")
+    field(NOVM,  "1")
+    field(OUTM, "$(P){ACMI:$(NO)}EE:TP2_baseline_LL-SP PP")
+    field(FTVN,  "LONG")
+    field(NOVN,  "1")
+    field(OUTN, "$(P){ACMI:$(NO)}EE:load-SP PP")
+}
+
+record(aSub,"$(P){ACMI:$(NO)}TP3write-Sub"){
+    field(SNAM,"TPwriteSub")
+    field(FLNK,"$(P){ACMI:$(NO)}BMwrite-Sub.PROC")
+    
+    field(FTA,  "LONG")
+    field(NOA,  "13")
+    field(INPA, "$(P){ACMI:$(NO)}EE:TP3-Wfm")
+
+    field(FTVA,  "LONG")
+    field(NOVA,  "1")
+    field(OUTA, "$(P){ACMI:$(NO)}EE:TP3_pulse_delay-SP PP")
+    field(FTVB,  "LONG")
+    field(NOVB,  "1")
+    field(OUTB, "$(P){ACMI:$(NO)}EE:TP3_pulse_width-SP PP")
+    field(FTVC,  "LONG")
+    field(NOVC,  "1")
+    field(OUTC, "$(P){ACMI:$(NO)}EE:TP3_pos_level-SP PP")
+    field(FTVD,  "LONG")
+    field(NOVD,  "1")
+    field(OUTD, "$(P){ACMI:$(NO)}EE:TP3_neg_level-SP PP")
+    field(FTVE,  "LONG")
+    field(NOVE,  "1")
+    field(OUTE, "$(P){ACMI:$(NO)}EE:TP3_adc_delay-SP PP")
+    field(FTVF,  "LONG")
+    field(NOVF,  "1")
+    field(OUTF, "$(P){ACMI:$(NO)}EE:TP3_integral_HL-SP PP")
+    field(FTVG,  "LONG")
+    field(NOVG,  "1")
+    field(OUTG, "$(P){ACMI:$(NO)}EE:TP3_integral_LL-SP PP")
+    field(FTVH,  "LONG")
+    field(NOVH,  "1")
+    field(OUTH, "$(P){ACMI:$(NO)}EE:TP3_peak_HL-SP PP")
+    field(FTVI,  "LONG")
+    field(NOVI,  "1")
+    field(OUTI, "$(P){ACMI:$(NO)}EE:TP3_peak_LL-SP PP")
+    field(FTVJ,  "LONG")
+    field(NOVJ,  "1")
+    field(OUTJ, "$(P){ACMI:$(NO)}EE:TP3_fwhm_HL-SP PP")
+    field(FTVK,  "LONG")
+    field(NOVK,  "1")
+    field(OUTK, "$(P){ACMI:$(NO)}EE:TP3_fwhm_LL-SP PP")
+    field(FTVL,  "LONG")
+    field(NOVL,  "1")
+    field(OUTL, "$(P){ACMI:$(NO)}EE:TP3_baseline_HL-SP PP")
+    field(FTVM,  "LONG")
+    field(NOVM,  "1")
+    field(OUTM, "$(P){ACMI:$(NO)}EE:TP3_baseline_LL-SP PP")
+    field(FTVN,  "LONG")
+    field(NOVN,  "1")
+    field(OUTN, "$(P){ACMI:$(NO)}EE:load-SP PP")
+}
+
+record(aSub,"$(P){ACMI:$(NO)}BMwrite-Sub"){
+    field(SNAM,"BMwriteSub")
+    
+    field(FTA,  "LONG")
+    field(NOA,  "11")
+    field(INPA, "$(P){ACMI:$(NO)}EE:BM-Wfm")
+
+    field(FTVA,  "LONG")
+    field(NOVA,  "1")
+    field(OUTA, "$(P){ACMI:$(NO)}EE:beam_delay-SP PP")
+    field(FTVB,  "LONG")
+    field(NOVB,  "1")
+    field(OUTB, "$(P){ACMI:$(NO)}EE:beam_HL-SP PP")
+    field(FTVC,  "LONG")
+    field(NOVC,  "1")
+    field(OUTC, "$(P){ACMI:$(NO)}EE:baseline_HL-SP PP")
+    field(FTVD,  "LONG")
+    field(NOVD,  "1")
+    field(OUTD, "$(P){ACMI:$(NO)}EE:baseline_LL-SP PP")
+    field(FTVE,  "LONG")
+    field(NOVE,  "1")
+    field(OUTE, "$(P){ACMI:$(NO)}EE:accum_qmin-SP PP")
+    field(FTVF,  "LONG")
+    field(NOVF,  "1")
+    field(OUTF, "$(P){ACMI:$(NO)}EE:accum_len-SP PP")
+    field(FTVG,  "LONG")
+    field(NOVG,  "1")
+    field(OUTG, "$(P){ACMI:$(NO)}EE:accum_HL-SP PP")
+    field(FTVH,  "LONG")
+    field(NOVH,  "1")
+    field(OUTH, "$(P){ACMI:$(NO)}EE:cow_thresh-SP PP")
+    field(FTVI,  "LONG")
+    field(NOVI,  "1")
+    field(OUTI, "$(P){ACMI:$(NO)}EE:charge_cal-SP PP")
+    field(FTVJ,  "LONG")
+    field(NOVJ,  "1")
+    field(OUTJ, "$(P){ACMI:$(NO)}EE:header-SP PP")
+    field(FTVK,  "LONG")
+    field(NOVK,  "1")
+    field(OUTK, "$(P){ACMI:$(NO)}CRC:file-SP PP")
+}
 

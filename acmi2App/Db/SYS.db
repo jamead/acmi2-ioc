@@ -1,0 +1,387 @@
+#############################################################
+#
+#       ACMI Database for Chain A & B 
+#
+#############################################################
+
+# Flush reg to socket buffer, trigger send to send all socket buffer to PSC 
+record(bo, "$(P)send") { 
+    field(DTYP, "PSC Ctrl Send All") 
+    field(OUT , "@Tx") 
+    field(ZNAM, "Send") 
+    field(ONAM, "Send") 
+} 
+ 
+# Write a single register
+record(longout, "$(P)GoRegSingleWrite") {
+    field(DTYP, "PSC Ctrl Send")
+    field(OUT , "@Tx")
+    field(VAL , "1") 
+    field(FLNK, "$(P)send")
+}
+
+############# Waveform PV's (MSG ID 51) #########################
+
+record(longin,"$(P)header-I") {
+    field(DESC, "Header")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 0 ")
+    field(SCAN, "I/O Intr")
+}
+
+record(longin,"$(P)fpgaver-I") {
+    field(DESC, "FPGAVER")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 4 ")
+    field(SCAN, "I/O Intr")
+}
+
+record(longin,"$(P)faults_live-I") {
+    field(DESC, "Faults Live")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 108")
+    field(SCAN, "I/O Intr")
+}
+
+record(longin,"$(P)faults_lat-I") {
+    field(DESC, "Faults Latched")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 112")
+    field(SCAN, "I/O Intr")
+}
+
+record(longin,"$(P)TrigCnt-I") {
+    field(DESC, "Timestamp")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 116")
+    field(SCAN, "I/O Intr")
+    field(FLNK,"$(P)ADC-Sub")
+}
+
+record(longin,"$(P)Interlock-I") {
+    field(DESC, "ACIS Readbacks")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 124")
+    field(SCAN, "I/O Intr")
+}
+
+record(longin,"$(P)CRC:artix-I") {
+    field(DESC, "Settings CRC caculated by ARTIX")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 128")
+    field(SCAN, "I/O Intr")
+}
+
+record(longin,"$(P)faults_tp-I") {
+    field(DESC, "Faults TP")
+    field(DTYP, "PSC Reg")  
+    field(INP , "@Wfm 51 132")
+    field(SCAN, "I/O Intr")
+}
+
+record(longin,"$(P)startup_cnt-I") {
+    field(DESC, "Startup Counter")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 136")
+    field(SCAN, "I/O Intr")
+}
+
+record(longin,"$(P)EVR:TS_Sec-I") {
+    field(DESC, "Startup Counter")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 148")
+    field(SCAN, "I/O Intr")
+}
+
+record(longin,"$(P)EVR:TS_nSec-I") {
+    field(DESC, "Startup Counter")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 152")
+    field(SCAN, "I/O Intr")
+}
+
+record(longin,"$(P)Temp1:Raw-I") {
+    field(DESC, "Startup Counter")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 160")
+    field(SCAN, "I/O Intr")
+}
+
+record(longin,"$(P)Temp2:Raw-I") {
+    field(DESC, "Startup Counter")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 164")
+    field(SCAN, "I/O Intr")
+}
+
+record(longin,"$(P)Vin:Raw-I") {
+    field(DESC, "Startup Counter")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 168")
+    field(SCAN, "I/O Intr")
+}
+
+record(longin,"$(P)Iin:Raw-I") {
+    field(DESC, "Startup Counter")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 164")
+    field(SCAN, "I/O Intr")
+}
+
+
+### EEPROM SetPoint & Readbacks ##################
+record(longout, "$(P)FP:Trig:delay-SP") {
+    field(DESC, "EEPROM write: Front Panel Trigger Delay")
+    field(DTYP, "PSC Single I32")
+    field(OUT , "@Tx 1 8")
+    field(FLNK, "$(P)GoRegSingleWrite")
+}
+
+record(longout, "$(P)EVR:EventNum-SP") {
+    field(DESC, "EEPROM write: EVR Event Number")
+    field(DTYP, "PSC Single I32")
+    field(OUT , "@Tx 1 0")
+    field(FLNK, "$(P)GoRegSingleWrite")
+}
+
+record(longout, "$(P)EVR:EventDly-SP") {
+    field(DESC, "EEPROM write: EVR Trigger Delay")
+    field(DTYP, "PSC Single I32")
+    field(OUT , "@Tx 1 4")
+    field(FLNK, "$(P)GoRegSingleWrite")
+}
+
+record(longout, "$(P)Accumulator:Reset-SP") {
+    field(DESC, "EEPROM write: Reset Accumulator to 0")
+    field(DTYP, "PSC Single I32")
+    field(OUT , "@Tx 1 16")
+    field(FLNK, "$(P)GoRegSingleWrite")
+}
+
+record(longout, "$(P)GTX:Reset-SP") {
+    field(DESC, "Reset Fiber Link between ARTIX and ZUDFE")
+    field(DTYP, "PSC Single I32")
+    field(OUT , "@Tx 1 24")
+    field(FLNK, "$(P)GoRegSingleWrite")
+}
+
+record(longout, "$(P)EE:header-SP") {
+    field(DESC, "EEPROM write")
+    field(DTYP, "PSC Single I32")
+    field(OUT , "@Tx 1 256")
+    field(FLNK, "$(P)GoRegSingleWrite")
+}
+
+record(longin,"$(P)EE:header-I") {
+    field(DESC, "EEPROM readback")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 256")
+    field(SCAN, "I/O Intr")
+}
+
+record(longout,"$(P)EE:Qcal-SP") {
+    field(DESC, "EEPROM write")
+    field(DTYP, "PSC Single I32")
+    field(OUT , "@Tx 1 440")
+    field(FLNK, "$(P)GoRegSingleWrite")
+}
+
+record(longin,"$(P)EE:Qcal-I") {
+    field(DESC, "EEPROM readback")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 440")
+    field(SCAN, "I/O Intr")
+}
+
+record(longout,"$(P)CRC:file-SP") {
+    field(DESC, "SETTINGS FILE CRC write")
+    field(DTYP, "PSC Single I32")
+    field(OUT , "@Tx 1 452")
+    field(FLNK, "$(P)GoRegSingleWrite")
+}
+
+record(longin,"$(P)CRC:eeprom-I") {
+    field(DESC, "EEPROM CRC readback")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Wfm 51 452")
+    field(SCAN, "I/O Intr")
+}
+
+#############################
+### ADC Waveform
+#############################
+
+record(waveform,"$(P)ADC-Wfm") {
+    field(DTYP, "PSC Block I32 In")
+    field(INP , "@Wfm 51 1024 ")
+    field(SCAN,"I/O Intr")
+    field(FTVL,"DOUBLE")
+    field(NELM,"16000")     
+}
+
+###########################################
+###  IOC System PVs
+###########################################
+
+record(longout,"$(P)TP:ClearHistory-SP") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(longout,"$(P)BM:ClearHistory-SP") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(longout,"$(P)TP:PVsynch-SP") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(longout,"$(P)Key:State-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(waveform,"$(P)Trig:Date-I"){
+  field(DTYP,"Soft Channel")
+  field(NELM,40)
+  field(FTVL,"CHAR")
+}
+
+record(ao,"$(P)Temp1-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+  field(EGU,"C")
+}
+
+record(ao,"$(P)Temp2-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+  field(EGU,"C")
+}
+
+record(ao,"$(P)Vin-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+  field(EGU,"mV")
+}
+
+record(ao,"$(P)Iin-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+  field(EGU,"mA")
+}
+
+### Software Counters and Timers:
+
+record(longin,"$(P)acTP:Counter-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(longin,"$(P)acTP:Timer-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+  field(EGU,"uSec")
+}
+
+record(longin,"$(P)acBM:Counter-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(longin,"$(P)acBM:Timer-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+  field(EGU,"uSec")
+}
+
+record(longin,"$(P)acSYS:Counter-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(longin,"$(P)acSYS:Timer-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+  field(EGU,"uSec")
+}
+
+record(longin,"$(P)acSYS:Counter-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+#####################################################
+###  Post Mortem PVs for System
+#####################################################
+
+record(longin,"$(P)PM:faults:live-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(longin,"$(P)PM:faults:lat-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(longin,"$(P)PM:CRC:artix-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(longin,"$(P)PM:CRC:eeprom-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(longin,"$(P)PM:CRC:file-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(longin,"$(P)PM:TrigCnt-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(stringout,"$(P)PM:Trig:Date-I"){
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(longin,"$(P)PM:TS_Sec-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(longin,"$(P)PM:TS_nSec-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}

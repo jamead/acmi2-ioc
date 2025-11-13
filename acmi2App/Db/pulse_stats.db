@@ -166,35 +166,35 @@ record(ai,"$(P){ACMI:$(NO)}TP3:peak-index-I") {
     field(SCAN, "I/O Intr")
 }
 
-record(ai,"$(P){ACMI:$(NO)}BEAMOOW:baseline-I") {
+record(ai,"$(P){ACMI:$(NO)}COW:baseline-I") {
     field(DESC, "Test Pulse 3 Info")
     field(DTYP, "PSC Reg")
     field(INP , "@PSC$(NO) 51 88 ")
     field(SCAN, "I/O Intr")
 }
 
-record(ai,"$(P){ACMI:$(NO)}BEAMOOW:peak-I") {
+record(ai,"$(P){ACMI:$(NO)}COW:peak-I") {
     field(DESC, "Test Pulse 3 Info")
     field(DTYP, "PSC Reg")
     field(INP , "@PSC$(NO) 51 92 ")
     field(SCAN, "I/O Intr")
 }
 
-record(ai,"$(P){ACMI:$(NO)}BEAMOOW:integral-I") {
+record(ai,"$(P){ACMI:$(NO)}COW:integral-I") {
     field(DESC, "Test Pulse 3 Info")
     field(DTYP, "PSC Reg")
     field(INP , "@PSC$(NO) 51 96 ")
     field(SCAN, "I/O Intr")
 }
 
-record(ai,"$(P){ACMI:$(NO)}BEAMOOW:fwhm-I") {
+record(ai,"$(P){ACMI:$(NO)}COW:fwhm-I") {
     field(DESC, "Test Pulse 3 Info")
     field(DTYP, "PSC Reg")
     field(INP , "@PSC$(NO) 51 100 ")
     field(SCAN, "I/O Intr")
 }
 
-record(ai,"$(P){ACMI:$(NO)}BEAMOOW:peak-index-I") {
+record(ai,"$(P){ACMI:$(NO)}COW:peak-index-I") {
     field(DESC, "Test Pulse 3 Info")
     field(DTYP, "PSC Reg")
     field(INP , "@PSC$(NO) 51 104")
@@ -221,6 +221,7 @@ record(ai,"$(P){ACMI:$(NO)}timestamp-I") {
     field(DTYP, "PSC Reg")
     field(INP , "@PSC$(NO) 51 116")
     field(SCAN, "I/O Intr")
+    field(FLNK,"$(P){ACMI:$(NO)}ADC-Sub")
 }
 
 record(ai,"$(P){ACMI:$(NO)}accum-I") {
@@ -237,7 +238,7 @@ record(ai,"$(P){ACMI:$(NO)}acis-I") {
     field(SCAN, "I/O Intr")
 }
 
-record(ai,"$(P){ACMI:$(NO)}EEPROM:CRC-I") {
+record(ai,"$(P){ACMI:$(NO)}crc_artix-I") {
     field(DESC, "ACIS Readbacks")
     field(DTYP, "PSC Reg")
     field(INP , "@PSC$(NO) 51 128")

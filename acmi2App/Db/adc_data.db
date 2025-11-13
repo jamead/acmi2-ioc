@@ -10,7 +10,7 @@
 #############################
 ### Beam OOW Waveform 
 #############################
-record(waveform,"$(P){ACMI:$(NO)}beamOOW_wfvm-I") {
+record(waveform,"$(P){ACMI:$(NO)}COW-Wfm") {
     field(DTYP, "PSC Block I16 In")
     field(INP , "@PSC$(NO) 53 0")
     field(SCAN,"I/O Intr")
