@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-11-12 15:29:56 by diag-->
+<!--Saved on 2025-11-13 13:45:26 by diag-->
 <display version="2.0.0">
   <name>Summary</name>
   <width>1100</width>
@@ -1352,7 +1352,7 @@
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_175</name>
-    <pv_name>$(P)COW:indx-I</pv_name>
+    <pv_name>$(P)COW:peak-index-I</pv_name>
     <x>777</x>
     <y>315</y>
     <width>76</width>
@@ -1472,7 +1472,7 @@
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_179</name>
-    <pv_name>$(P)COW:base-I</pv_name>
+    <pv_name>$(P)COW:baseline-I</pv_name>
     <x>777</x>
     <y>340</y>
     <width>76</width>
@@ -3625,7 +3625,7 @@
           </value>
         </exp>
         <pv_name>$(P)accum-I</pv_name>
-        <pv_name>$(P)accum_HL-I</pv_name>
+        <pv_name>$(P)EE:accum_HL-I</pv_name>
       </rule>
     </rules>
     <border_width>1</border_width>
@@ -3832,7 +3832,7 @@
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_368</name>
-    <pv_name>$(P)EEPROM:CRC-I</pv_name>
+    <pv_name>$(P)crc_artix-I</pv_name>
     <x>991</x>
     <y>685</y>
     <width>98</width>

@@ -52,7 +52,7 @@ int COWsub(aSubRecord *precord) {
             CSUM = CSUM + (CWFM[i]-CFIT[i])*(CWFM[i]-CFIT[i]);
         }
         SCORE = sqrt(CSUM)/PEAK;
-//        printf("CSUM = %8.2f  Score = %8.4f\n",CSUM,SCORE);
+        printf("CSUM = %8.2f  Score = %8.4f\n",CSUM,SCORE);
         memcpy((float *)precord->vali,CFIT,128*sizeof(float));
         memcpy((int *)precord->valb,CWFM,128*sizeof(int));
     }
