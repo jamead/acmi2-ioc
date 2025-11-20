@@ -44,3 +44,6 @@ iocInit
 #seq reset_digout P=$(IOCNAME) NO=1 CHAN=1 &
 
 epicsThreadSleep(1.0)
+
+dbpf lab{ACMI:A}EVR:TrigNo-SP 32
+dbpf lab{ACMI:A}EVR:TrigDly-SP 1

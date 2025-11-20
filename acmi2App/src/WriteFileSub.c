@@ -32,6 +32,7 @@ uint32_t crc32_update(uint32_t crc, uint8_t data) {
 }
 
 int WriteFileSub(aSubRecord *precord) {
+    printf("Hello from WriteFileSub....\n");
     int i,Set[55];
     uint32_t crc= CRC32_INIT;
     unsigned char byteval;

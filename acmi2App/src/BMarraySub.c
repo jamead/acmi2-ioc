@@ -15,7 +15,7 @@
 #include <epicsExport.h>
 
 int BMarraySub(aSubRecord *precord) {
-//    printf("Hello from BMarraySub....\n");
+    printf("Hello from BMarraySub....\n");
     int A[11],zero=0;
 
     A[0] = *(int *)precord->a;

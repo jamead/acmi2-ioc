@@ -15,6 +15,7 @@
 #include <epicsExport.h>
 
 int ADCsub(aSubRecord *precord) {
+    printf("Hello from ADCSub....\n");
     int i,indx1,indx2,indx3,indxb,TP1[72],TP2[72],TP3[72],BM[72];
     int BLsum[4]={0},BL[4],pos1,pos2,pos3,neg1,neg2,neg3;
     int INTG[4]={0},PEAK[4]={0},FWHM[4],INDX[4]={0},faults;

@@ -1034,7 +1034,7 @@ record(aSub,"$(P){ACMI:$(NO)}WriteFile-Sub"){
 
 record(aSub,"$(P){ACMI:$(NO)}LoadFile-Sub"){
     field(SNAM,"LoadFileSub")
-    field(FLNK,"$(P){ACMI:$(NO)}TP1write-Sub")
+    field(FLNK,"$(P){ACMI:$(NO)}TP1write-Sub.PROC")
 
     field(FTVA,  "LONG")
     field(NOVA,  "13")
@@ -1248,6 +1248,6 @@ record(aSub,"$(P){ACMI:$(NO)}BMwrite-Sub"){
     field(OUTJ, "$(P){ACMI:$(NO)}EE:header-SP PP")
     field(FTVK,  "LONG")
     field(NOVK,  "1")
-    field(OUTK, "$(P){ACMI:$(NO)}CRC:file-SP PP")
+    field(OUTK, "$(P){ACMI:$(NO)}EE:crc_eeprom-SP PP")
 }
 

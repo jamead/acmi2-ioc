@@ -15,7 +15,7 @@
 #include <epicsExport.h>
 
 int COWsub(aSubRecord *precord) {
-
+    printf("Hello from COWSub....\n");
     int i,IMAX=0;
     float CFIT[128],CSUM=0,SCORE=0,PMAX=0;
     int *CWFM = (int *)precord->a;

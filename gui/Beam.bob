@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-11-13 14:29:11 by diag-->
+<!--Saved on 2025-11-19 14:30:25 by diag-->
 <display version="2.0.0">
   <name>Beam</name>
   <width>1100</width>
@@ -24,7 +24,7 @@
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_97</name>
     <x>864</x>
-    <y>631</y>
+    <y>696</y>
     <width>232</width>
     <height>80</height>
     <line_width>2</line_width>
@@ -1123,135 +1123,9 @@
     <transparent>true</transparent>
   </widget>
   <widget type="group" version="3.0.0">
-    <name>Group_25</name>
-    <x>864</x>
-    <y>76</y>
-    <width>232</width>
-    <height>106</height>
-    <style>3</style>
-    <transparent>true</transparent>
-    <widget type="rectangle" version="2.0.0">
-      <name>Rectangle_85</name>
-      <width>232</width>
-      <height>106</height>
-      <line_width>2</line_width>
-      <line_color>
-        <color name="Text" red="0" green="0" blue="0">
-        </color>
-      </line_color>
-      <background_color>
-        <color name="Grid" red="128" green="128" blue="128">
-        </color>
-      </background_color>
-      <transparent>true</transparent>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_369</name>
-      <pv_name>$(P)TrigCnt-I</pv_name>
-      <x>129</x>
-      <y>79</y>
-      <width>97</width>
-      <precision>0</precision>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <border_width>1</border_width>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_326</name>
-      <text>Trigger Count</text>
-      <x>6</x>
-      <y>79</y>
-      <width>119</width>
-      <font>
-        <font family="Liberation Sans" style="REGULAR" size="12.0">
-        </font>
-      </font>
-      <background_color>
-        <color name="Button_Background" red="210" green="210" blue="210">
-        </color>
-      </background_color>
-      <transparent>false</transparent>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <border_width>1</border_width>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_370</name>
-      <pv_name>$(P)EVR:TS_Sec-I</pv_name>
-      <x>129</x>
-      <y>7</y>
-      <width>97</width>
-      <precision>0</precision>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <border_width>1</border_width>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_371</name>
-      <pv_name>$(P)EVR:TS_nSec-I</pv_name>
-      <x>129</x>
-      <y>31</y>
-      <width>97</width>
-      <precision>0</precision>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <border_width>1</border_width>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_327</name>
-      <text>Epoch (Secs)</text>
-      <x>6</x>
-      <y>7</y>
-      <width>119</width>
-      <font>
-        <font family="Liberation Sans" style="REGULAR" size="12.0">
-        </font>
-      </font>
-      <background_color>
-        <color name="Button_Background" red="210" green="210" blue="210">
-        </color>
-      </background_color>
-      <transparent>false</transparent>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <border_width>1</border_width>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_328</name>
-      <text>Trig (NSecs)</text>
-      <x>6</x>
-      <y>31</y>
-      <width>119</width>
-      <font>
-        <font family="Liberation Sans" style="REGULAR" size="12.0">
-        </font>
-      </font>
-      <background_color>
-        <color name="Button_Background" red="210" green="210" blue="210">
-        </color>
-      </background_color>
-      <transparent>false</transparent>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <border_width>1</border_width>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_372</name>
-      <pv_name>$(P)Trig:Date-I</pv_name>
-      <x>6</x>
-      <y>55</y>
-      <width>220</width>
-      <format>6</format>
-      <precision>0</precision>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <border_width>1</border_width>
-    </widget>
-  </widget>
-  <widget type="group" version="3.0.0">
     <name>Group_26</name>
     <x>864</x>
-    <y>186</y>
+    <y>251</y>
     <width>232</width>
     <height>441</height>
     <style>3</style>
@@ -3649,7 +3523,7 @@
     <name>Label_295</name>
     <text>Settings File CRC</text>
     <x>869</x>
-    <y>637</y>
+    <y>702</y>
     <width>120</width>
     <font>
       <font family="Liberation Sans" style="REGULAR" size="12.0">
@@ -3680,7 +3554,7 @@
     <name>Text Entry_119</name>
     <pv_name>$(P)CRC:file-SP</pv_name>
     <x>993</x>
-    <y>637</y>
+    <y>702</y>
     <width>98</width>
     <font>
       <font family="Liberation Sans" style="REGULAR" size="12.0">
@@ -3711,9 +3585,9 @@
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_388</name>
-    <pv_name>$(P)CRC:eeprom-I</pv_name>
+    <pv_name>$(P)EE:crc_eeprom-I</pv_name>
     <x>993</x>
-    <y>661</y>
+    <y>726</y>
     <width>98</width>
     <font>
       <font family="Liberation Sans" style="REGULAR" size="12.0">
@@ -3729,7 +3603,7 @@
     <name>Label_296</name>
     <text>EEPROM CRC</text>
     <x>869</x>
-    <y>661</y>
+    <y>726</y>
     <width>120</width>
     <font>
       <font family="Liberation Sans" style="REGULAR" size="12.0">
@@ -3759,7 +3633,7 @@
     <name>Text Update_389</name>
     <pv_name>$(P)crc_artix-I</pv_name>
     <x>993</x>
-    <y>685</y>
+    <y>750</y>
     <width>98</width>
     <font>
       <font family="Liberation Sans" style="REGULAR" size="12.0">
@@ -3775,7 +3649,7 @@
     <name>Label_297</name>
     <text>ARTIX CRC</text>
     <x>869</x>
-    <y>685</y>
+    <y>750</y>
     <width>120</width>
     <font>
       <font family="Liberation Sans" style="REGULAR" size="12.0">
@@ -4108,5 +3982,197 @@
     <horizontal_alignment>1</horizontal_alignment>
     <vertical_alignment>1</vertical_alignment>
     <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_379</name>
+    <text>EVR: Event Num</text>
+    <x>870</x>
+    <y>177</y>
+    <width>148</width>
+    <height>30</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_118</name>
+    <pv_name>$(P)EVR:TrigNo-SP</pv_name>
+    <x>1022</x>
+    <y>177</y>
+    <width>69</width>
+    <height>30</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <format>1</format>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_382</name>
+    <text>Event Delay</text>
+    <x>870</x>
+    <y>211</y>
+    <width>119</width>
+    <height>30</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_120</name>
+    <pv_name>$(P)EVR:TrigDly-SP</pv_name>
+    <x>993</x>
+    <y>211</y>
+    <width>98</width>
+    <height>30</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_387</name>
+    <pv_name>$(P)TrigCnt-I</pv_name>
+    <x>993</x>
+    <y>153</y>
+    <width>97</width>
+    <precision>0</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_383</name>
+    <text>Trigger Count</text>
+    <x>870</x>
+    <y>153</y>
+    <width>119</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_391</name>
+    <pv_name>$(P)TS-S-I</pv_name>
+    <x>993</x>
+    <y>81</y>
+    <width>97</width>
+    <precision>0</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_392</name>
+    <pv_name>$(P)TS-NS-I</pv_name>
+    <x>993</x>
+    <y>105</y>
+    <width>97</width>
+    <precision>0</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_384</name>
+    <text>Epoch (Secs)</text>
+    <x>870</x>
+    <y>81</y>
+    <width>119</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_385</name>
+    <text>Trig (NSecs)</text>
+    <x>870</x>
+    <y>105</y>
+    <width>119</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_393</name>
+    <pv_name>$(P)Trig:Date-I</pv_name>
+    <x>870</x>
+    <y>129</y>
+    <width>220</width>
+    <format>6</format>
+    <precision>0</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_74</name>
+    <x>864</x>
+    <y>75</y>
+    <width>232</width>
+    <height>172</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="Grid" red="128" green="128" blue="128">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
   </widget>
 </display>

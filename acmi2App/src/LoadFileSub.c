@@ -16,6 +16,7 @@
 
 int LoadFileSub(aSubRecord *precord)
 {
+    printf("Hello from LoadFileSub....\n");
     int i,fr,Set[55],TP1[13],TP2[13],TP3[13],BM[11],zero=0,stat;
     char buff[2000],*a, *line[50];
 

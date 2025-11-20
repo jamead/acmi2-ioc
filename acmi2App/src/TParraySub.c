@@ -15,7 +15,7 @@
 #include <epicsExport.h>
 
 int TParraySub(aSubRecord *precord) {
-//    printf("Hello from TParraySub....\n");
+    printf("Hello from TParraySub....\n");
     int A[13],zero=0;
 
     A[0] = *(int *)precord->a;
