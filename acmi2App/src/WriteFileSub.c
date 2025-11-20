@@ -43,7 +43,7 @@ int WriteFileSub(aSubRecord *precord) {
     int *TP3 = (int *)precord->c;
     int *BM = (int *)precord->d;
     
-    FILE *fout = fopen("/home/diag/acmi2/settings/settings.txt","w");
+    FILE *fout = fopen("/home/mead/acmi/ioc/acmi2-ioc/settings/settings.txt","w");
 
     Set[0] = BM[9];		strcpy(names[0],"Settings Header");
     Set[1] = TP1[0];	strcpy(names[1],"TP1 Pulse Delay");

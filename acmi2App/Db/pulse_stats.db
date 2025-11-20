@@ -216,8 +216,8 @@ record(ai,"$(P){ACMI:$(NO)}faults_lat-I") {
 }
 
 
-record(ai,"$(P){ACMI:$(NO)}timestamp-I") {
-    field(DESC, "Timestamp")
+record(ai,"$(P){ACMI:$(NO)}TrigCnt-I") {
+    field(DESC, "Trigger Count")
     field(DTYP, "PSC Reg")
     field(INP , "@PSC$(NO) 51 116")
     field(SCAN, "I/O Intr")

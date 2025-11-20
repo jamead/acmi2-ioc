@@ -10,6 +10,7 @@ epicsEnvSet("IOCNAME", "lab")
 # PSC IP address
 epicsEnvSet("ACMI2_IP", "10.0.142.128"); 
 
+
 #epicsEnvSet("BLEN",100000);        # Snapshot DMA Length
 
 cd "${TOP}"
@@ -31,7 +32,7 @@ dbLoadRecords("db/TP.db", "P=$(IOCNAME), NO=A, T=2")
 dbLoadRecords("db/TP.db", "P=$(IOCNAME), NO=A, T=3")
 dbLoadRecords("db/Beam.db", "P=$(IOCNAME), NO=A")
 
-var(PSCDebug, 1)	#5 full debug
+var(PSCDebug, 5)	#5 full debug
 
 #psc1 Create the PSC
 createPSC("PSCA", $(ACMI2_IP), 3000, 0)

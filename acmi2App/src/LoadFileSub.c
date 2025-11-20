@@ -20,7 +20,7 @@ int LoadFileSub(aSubRecord *precord)
     int i,fr,Set[55],TP1[13],TP2[13],TP3[13],BM[11],zero=0,stat;
     char buff[2000],*a, *line[50];
 
-    fr = open("/home/diag/acmi2/settings/settings.txt",O_RDONLY);
+    fr = open("/home/mead/acmi/ioc/acmi2-ioc/settings/settings.txt",O_RDONLY);
     stat = read(fr,buff,2000);
     if(stat<0){
         printf("ERROR opening file.\n");

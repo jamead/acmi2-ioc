@@ -10,15 +10,15 @@
 8074		:	TP3 ADC Delay
 450		:	Beam ADC Delay
 600		:	COW Threshold
-16000		:	TP1 Integral High Level
+16500		:	TP1 Integral High Level
 14600		:	TP1 Integral Low Level
-17000		:	TP2 Integral High Level
+17500		:	TP2 Integral High Level
 14500		:	TP2 Integral Low Level
 258000		:	TP3 Integral High Level
 240000		:	TP3 Integral Low Level
 2300		:	TP1 Peak High Level
 1800		:	TP1 Peak Low Level
-2300		:	TP2 Peak High Level
+2400		:	TP2 Peak High Level
 1800		:	TP2 Peak Low Level
 17800		:	TP3 Peak High Level
 16800		:	TP3 Peak Low Level
@@ -47,4 +47,4 @@
 14600		:	Beam Charge Calibration
 0		:	Accumulation Qmin
 100		:	Accumulator Length
--1970107889		:	File CRC Value
+-1344593807		:	File CRC Value
