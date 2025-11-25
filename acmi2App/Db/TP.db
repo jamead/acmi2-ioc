@@ -245,7 +245,7 @@ record(ai,"$(P){ACMI:$(NO)}TP$(T):PM:Q-I") {
 
 record(waveform,"$(P){ACMI:$(NO)}TP$(T):PM-Wfm"){
   field(DTYP,"Soft Channel")
-  field(DESC,"72 Point Waveform for TP$(T)")
+  field(DESC,"92 Point Waveform for TP$(T)")
   field(NELM,"100")
   field(FTVL,"LONG")
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-11-19 14:42:15 by diag-->
+<!--Saved on 2025-11-22 09:37:07 by diag-->
 <display version="2.0.0">
   <name>TP2</name>
   <width>1100</width>
@@ -3457,8 +3457,8 @@
             </color>
           </value>
         </exp>
-        <pv_name>$(P)CRC:eeprom-I</pv_name>
-        <pv_name>$(P)CRC:artix-I</pv_name>
+        <pv_name>$(P)EE:crc_eeprom-I</pv_name>
+        <pv_name>$(P)crc_artix-I</pv_name>
       </rule>
     </rules>
     <border_width>1</border_width>
@@ -3537,7 +3537,7 @@
         </exp>
         <pv_name>$(P)EE:TP2_integral_HL-I</pv_name>
         <pv_name>$(P)EE:TP2_integral_LL-I</pv_name>
-        <pv_name>$(P)TP2:Fault:Stats-Wfm.VAL[5]</pv_name>
+        <pv_name>$(P)TP2:Fault:Stats-Wfm.VAL[0]</pv_name>
       </rule>
     </rules>
     <border_width>1</border_width>
@@ -3643,7 +3643,7 @@
         </exp>
         <pv_name>$(P)EE:TP2_integral_HL-I</pv_name>
         <pv_name>$(P)EE:TP2_integral_LL-I</pv_name>
-        <pv_name>$(P)TP2:Fault:Stats-Wfm.VAL[5]</pv_name>
+        <pv_name>$(P)TP2:Fault:Stats-Wfm.VAL[0]</pv_name>
       </rule>
     </rules>
     <border_width>1</border_width>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-11-19 09:26:38 by diag-->
+<!--Saved on 2025-11-25 09:40:48 by diag-->
 <display version="2.0.0">
   <name>Settings</name>
   <width>1150</width>
@@ -74,9 +74,9 @@
   </widget>
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_88</name>
-    <x>869</x>
-    <y>800</y>
-    <width>275</width>
+    <x>582</x>
+    <y>755</y>
+    <width>237</width>
     <height>41</height>
     <line_width>1</line_width>
     <line_color>
@@ -91,10 +91,10 @@
   </widget>
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_85</name>
-    <x>865</x>
+    <x>578</x>
     <y>751</y>
-    <width>283</width>
-    <height>95</height>
+    <width>485</width>
+    <height>49</height>
     <line_width>2</line_width>
     <line_color>
       <color name="Text" red="0" green="0" blue="0">
@@ -108,9 +108,9 @@
   </widget>
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_87</name>
-    <x>869</x>
-    <y>756</y>
-    <width>275</width>
+    <x>822</x>
+    <y>755</y>
+    <width>237</width>
     <height>41</height>
     <line_width>1</line_width>
     <line_color>
@@ -145,7 +145,7 @@
     <x>291</x>
     <y>750</y>
     <width>283</width>
-    <height>95</height>
+    <height>66</height>
     <line_width>2</line_width>
     <line_color>
       <color name="Text" red="0" green="0" blue="0">
@@ -2446,73 +2446,11 @@
       <confirm_message>Reseting will delete the SA History Buffers.  Continue?</confirm_message>
     </widget>
   </widget>
-  <widget type="label" version="2.0.0">
-    <name>Label_274</name>
-    <text>File CRC</text>
-    <x>296</x>
-    <y>756</y>
-    <width>149</width>
-    <height>25</height>
-    <font>
-      <font family="Liberation Sans" style="REGULAR" size="16.0">
-      </font>
-    </font>
-    <background_color>
-      <color red="170" green="255" blue="170">
-      </color>
-    </background_color>
-    <transparent>false</transparent>
-    <horizontal_alignment>1</horizontal_alignment>
-    <vertical_alignment>1</vertical_alignment>
-    <rules>
-      <rule name="BGcolor" prop_id="background_color" out_exp="false">
-        <exp bool_exp="pv0!=pv1">
-          <value>
-            <color red="255" green="213" blue="138">
-            </color>
-          </value>
-        </exp>
-        <pv_name>$(P)CRC:file-SP</pv_name>
-        <pv_name>$(P)CRC:eeprom-I</pv_name>
-      </rule>
-    </rules>
-    <border_width>1</border_width>
-  </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>Text Entry_108</name>
-    <pv_name>$(P)CRC:file-SP</pv_name>
-    <x>449</x>
-    <y>756</y>
-    <width>120</width>
-    <height>25</height>
-    <format>4</format>
-    <show_units>false</show_units>
-    <horizontal_alignment>1</horizontal_alignment>
-    <rules>
-      <rule name="BGcolor" prop_id="background_color" out_exp="false">
-        <exp bool_exp="pv0!=pv1">
-          <value>
-            <color red="255" green="180" blue="180">
-            </color>
-          </value>
-        </exp>
-        <pv_name>$(P)CRC:file-SP</pv_name>
-        <pv_name>$(P)CRC:eeprom-I</pv_name>
-      </rule>
-      <rule name="Enable" prop_id="enabled" out_exp="false">
-        <exp bool_exp="pvInt0&amp;0x0400==0">
-          <value>false</value>
-        </exp>
-        <pv_name>$(P)faults_live-I</pv_name>
-      </rule>
-    </rules>
-    <border_width>1</border_width>
-  </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_367</name>
     <pv_name>$(P)EE:crc_eeprom-I</pv_name>
     <x>449</x>
-    <y>785</y>
+    <y>756</y>
     <width>120</width>
     <height>25</height>
     <format>4</format>
@@ -2525,7 +2463,7 @@
     <name>Label_275</name>
     <text>EEPROM CRC</text>
     <x>296</x>
-    <y>785</y>
+    <y>756</y>
     <width>149</width>
     <height>25</height>
     <font>
@@ -2556,7 +2494,7 @@
     <name>Text Update_368</name>
     <pv_name>$(P)crc_artix-I</pv_name>
     <x>449</x>
-    <y>814</y>
+    <y>785</y>
     <width>120</width>
     <height>25</height>
     <format>4</format>
@@ -2569,7 +2507,7 @@
     <name>Label_276</name>
     <text>ARTIX CRC</text>
     <x>296</x>
-    <y>814</y>
+    <y>785</y>
     <width>149</width>
     <height>25</height>
     <font>
@@ -2591,8 +2529,8 @@
             </color>
           </value>
         </exp>
-        <pv_name>$(P)CRC:eeprom-I</pv_name>
-        <pv_name>$(P)CRC:artix-I</pv_name>
+        <pv_name>$(P)EE:crc_eeprom-I</pv_name>
+        <pv_name>$(P)crc_artix-I</pv_name>
       </rule>
     </rules>
     <border_width>1</border_width>
@@ -4886,7 +4824,7 @@
     <vertical_alignment>1</vertical_alignment>
     <rules>
       <rule name="BGcolor" prop_id="background_color" out_exp="false">
-        <exp bool_exp="pvInt0&amp;200000&gt;0">
+        <exp bool_exp="pvInt0&amp;0x200000&gt;0">
           <value>
             <color red="175" green="175" blue="240">
             </color>
@@ -5962,9 +5900,9 @@
   <widget type="bool_button" version="2.0.0">
     <name>Boolean Button</name>
     <pv_name>$(P)EE:save-SP</pv_name>
-    <x>871</x>
-    <y>759</y>
-    <width>270</width>
+    <x>825</x>
+    <y>758</y>
+    <width>230</width>
     <height>35</height>
     <off_label>Save Settings to file</off_label>
     <off_color>
@@ -5982,9 +5920,9 @@
   <widget type="bool_button" version="2.0.0">
     <name>Boolean Button_1</name>
     <pv_name>$(P)EE:load-SP</pv_name>
-    <x>871</x>
-    <y>803</y>
-    <width>270</width>
+    <x>585</x>
+    <y>758</y>
+    <width>230</width>
     <height>35</height>
     <off_label>Load Settings from file</off_label>
     <off_color>
@@ -6000,33 +5938,69 @@
     <mode>1</mode>
   </widget>
   <widget type="textentry" version="3.0.0">
-    <name>Text Entry_109</name>
-    <pv_name>$(P)EE:crc_eeprom-SP</pv_name>
-    <x>577</x>
-    <y>785</y>
-    <width>120</width>
-    <height>25</height>
-    <format>4</format>
+    <name>Text Entry_110</name>
+    <pv_name>$(P)Settings:File-SP</pv_name>
+    <x>674</x>
+    <y>804</y>
+    <width>387</width>
+    <height>30</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <format>6</format>
     <show_units>false</show_units>
     <horizontal_alignment>1</horizontal_alignment>
-    <rules>
-      <rule name="BGcolor" prop_id="background_color" out_exp="false">
-        <exp bool_exp="pv0!=pv1">
-          <value>
-            <color red="255" green="180" blue="180">
-            </color>
-          </value>
-        </exp>
-        <pv_name>$(P)EE:crc_eeprom-SP</pv_name>
-        <pv_name>$(P)EE:crc_eeprom-I</pv_name>
-      </rule>
-      <rule name="Enable" prop_id="enabled" out_exp="false">
-        <exp bool_exp="pvInt0&amp;0x0400==0">
-          <value>false</value>
-        </exp>
-        <pv_name>$(P)faults_live-I</pv_name>
-      </rule>
-    </rules>
-    <border_width>1</border_width>
+    <border_width>2</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_142</name>
+    <text>File Name</text>
+    <x>580</x>
+    <y>804</y>
+    <width>89</width>
+    <height>30</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>2</border_width>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED</name>
+    <pv_name>$(P)File:Status-I</pv_name>
+    <x>1066</x>
+    <y>751</y>
+    <width>80</width>
+    <height>85</height>
+    <off_label>File
+OK</off_label>
+    <off_color>
+      <color red="170" green="255" blue="170">
+      </color>
+    </off_color>
+    <on_label>File
+ERROR</on_label>
+    <on_color>
+      <color red="255" green="175" blue="175">
+      </color>
+    </on_color>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="18.0">
+      </font>
+    </font>
+    <line_color>
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <square>true</square>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
   </widget>
 </display>

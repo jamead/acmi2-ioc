@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-11-19 14:46:02 by diag-->
+<!--Saved on 2025-11-22 09:09:57 by diag-->
 <display version="2.0.0">
   <name>TP3</name>
   <width>1100</width>
@@ -3332,8 +3332,8 @@
             </color>
           </value>
         </exp>
-        <pv_name>$(P)CRC:eeprom-I</pv_name>
-        <pv_name>$(P)CRC:artix-I</pv_name>
+        <pv_name>$(P)EE:crc_eeprom-I</pv_name>
+        <pv_name>$(P)crc_artix-I</pv_name>
       </rule>
     </rules>
     <border_width>1</border_width>
@@ -3410,8 +3410,8 @@
             </color>
           </value>
         </exp>
-        <pv_name>$(P)EE:TP2_integral_HL-I</pv_name>
-        <pv_name>$(P)EE:TP2_integral_LL-I</pv_name>
+        <pv_name>$(P)EE:TP3_integral_HL-I</pv_name>
+        <pv_name>$(P)EE:TP3_integral_LL-I</pv_name>
         <pv_name>$(P)TP3:Fault:Stats-Wfm.VAL[0]</pv_name>
       </rule>
     </rules>
@@ -3516,8 +3516,8 @@
             </color>
           </value>
         </exp>
-        <pv_name>$(P)EE:TP2_integral_HL-I</pv_name>
-        <pv_name>$(P)EE:TP2_integral_LL-I</pv_name>
+        <pv_name>$(P)EE:TP3_integral_HL-I</pv_name>
+        <pv_name>$(P)EE:TP3_integral_LL-I</pv_name>
         <pv_name>$(P)TP3:Fault:Stats-Wfm.VAL[0]</pv_name>
       </rule>
     </rules>
@@ -3546,8 +3546,8 @@
             </color>
           </value>
         </exp>
-        <pv_name>$(P)EE:TP2_peak_HL-I</pv_name>
-        <pv_name>$(P)EE:TP2_peak_LL-I</pv_name>
+        <pv_name>$(P)EE:TP3_peak_HL-I</pv_name>
+        <pv_name>$(P)EE:TP3_peak_LL-I</pv_name>
         <pv_name>$(P)TP3:Fault:Stats-Wfm.VAL[1]</pv_name>
       </rule>
     </rules>
@@ -3576,8 +3576,8 @@
             </color>
           </value>
         </exp>
-        <pv_name>$(P)EE:TP2_fwhm_HL-I</pv_name>
-        <pv_name>$(P)EE:TP2_fwhm_LL-I</pv_name>
+        <pv_name>$(P)EE:TP3_fwhm_HL-I</pv_name>
+        <pv_name>$(P)EE:TP3_fwhm_LL-I</pv_name>
         <pv_name>$(P)TP3:Fault:Stats-Wfm.VAL[2]</pv_name>
       </rule>
     </rules>
@@ -3606,8 +3606,8 @@
             </color>
           </value>
         </exp>
-        <pv_name>$(P)EE:TP2_baseline_HL-I</pv_name>
-        <pv_name>$(P)EE:TP2_baseline_LL-I</pv_name>
+        <pv_name>$(P)EE:TP3_baseline_HL-I</pv_name>
+        <pv_name>$(P)EE:TP3_baseline_LL-I</pv_name>
         <pv_name>$(P)TP3:Fault:Stats-Wfm.VAL[4]</pv_name>
       </rule>
     </rules>

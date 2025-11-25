@@ -97,3 +97,23 @@ record(ai,"$(P){ACMI:$(NO)}TS-NS-I") {
     field(SCAN, "I/O Intr")
 }
 
+record(waveform,"$(P){ACMI:$(NO)}Trig:Date-I"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"String for Trigger Date")
+  field(NELM,"40")
+  field(FTVL,"CHAR")
+}
+
+record(waveform,"$(P){ACMI:$(NO)}Settings:File-SP"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"String for Trigger Date")
+  field(NELM,"128")
+  field(FTVL,"CHAR")
+}
+
+record(longout,"$(P){ACMI:$(NO)}File:Status-I") {
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+

@@ -141,6 +141,13 @@ record(waveform,"$(P){ACMI:$(NO)}COW:Fault-Wfm"){
   field(FTVL,"LONG")
 }
 
+record(waveform,"$(P){ACMI:$(NO)}COW:Fault:Date-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"Date String for COW Fault")
+  field(NELM,"40")
+  field(FTVL,"CHAR")
+}
+
 record(waveform,"$(P){ACMI:$(NO)}COW:Fit-Wfm"){
   field(DTYP,"Soft Channel")
   field(DESC,"128 Point Waveform for COW Fault")

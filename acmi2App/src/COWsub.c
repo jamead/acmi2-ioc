@@ -27,11 +27,20 @@ int COWsub(aSubRecord *precord) {
     int INDX = *(int *)precord->e;
     int BASE = *(int *)precord->f;
     int QCAL = *(int *)precord->g;
+    int tmsec = *(int *)precord->h;
 
     float Q = (float)INTG/QCAL;
     *(float *)precord->vala = Q;
+    
+    time_t trigTime;
+    struct tm ts;
+    char tmstr[40];
 
     if(INTG>0){
+        trigTime = (time_t)tmsec;
+        ts = *localtime(&trigTime);
+        strftime(tmstr,sizeof(tmstr), "%a %d %b %Y %H:%M:%S %Z", &ts);
+    
         *(float *)precord->valc = Q;
         *(int *)precord->vald = INTG;
         *(int *)precord->vale = PEAK;
@@ -55,6 +64,7 @@ int COWsub(aSubRecord *precord) {
         printf("CSUM = %8.2f  Score = %8.4f\n",CSUM,SCORE);
         memcpy((float *)precord->vali,CFIT,128*sizeof(float));
         memcpy((int *)precord->valb,CWFM,128*sizeof(int));
+        memcpy((char *)precord->valj,tmstr,strlen(tmstr)*sizeof(char));
     }
 
     return(0);

@@ -1,50 +1,50 @@
-1234		:	Settings Header
+1234567		:	Settings Header
 4000		:	TP1 Pulse Delay
-2		:	TP1 Pulse Width
-4074		:	TP1 ADC Delay
+5		:	TP1 Pulse Width
+4075		:	TP1 ADC Delay
 6000		:	TP2 Pulse Delay
-2		:	TP2 Pulse Width
-6074		:	TP2 ADC Delay
+6		:	TP2 Pulse Width
+6075		:	TP2 ADC Delay
 8000		:	TP3 Pulse Delay
-14		:	TP3 Pulse Width
-8074		:	TP3 ADC Delay
-450		:	Beam ADC Delay
+20		:	TP3 Pulse Width
+8075		:	TP3 ADC Delay
+1067		:	Beam ADC Delay
 600		:	COW Threshold
-16500		:	TP1 Integral High Level
-14600		:	TP1 Integral Low Level
-17500		:	TP2 Integral High Level
-14500		:	TP2 Integral Low Level
-258000		:	TP3 Integral High Level
-240000		:	TP3 Integral Low Level
-2300		:	TP1 Peak High Level
+18000		:	TP1 Integral Low Level
+15500		:	TP1 Integral High Level
+18400		:	TP2 Integral Low Level
+16400		:	TP2 Integral High Level
+275000		:	TP3 Integral Low Level
+271000		:	TP3 Integral High Level
 1800		:	TP1 Peak Low Level
-2400		:	TP2 Peak High Level
+2200		:	TP1 Peak High Level
 1800		:	TP2 Peak Low Level
-17800		:	TP3 Peak High Level
-16800		:	TP3 Peak Low Level
-9		:	TP1 FWHM High Level
+2200		:	TP2 Peak High Level
+12000		:	TP3 Peak Low Level
+14500		:	TP3 Peak High Level
 6		:	TP1 FWHM Low Level
-9		:	TP2 FWHM High Level
+10		:	TP1 FWHM High Level
 6		:	TP2 FWHM Low Level
-17		:	TP3 FWHM High Level
-13		:	TP3 FWHM Low Level
-100		:	TP1 Baseline High Level
+10		:	TP2 FWHM High Level
+18		:	TP3 FWHM Low Level
+22		:	TP3 FWHM High Level
 0		:	TP1 Baseline Low Level
-0		:	TP2 Baseline High Level
+100		:	TP1 Baseline High Level
 -100		:	TP2 Baseline Low Level
-0		:	TP3 Baseline High Level
+0		:	TP2 Baseline High Level
 -100		:	TP3 Baseline Low Level
-0		:	TP1 Negative Level
-11		:	TP2 Negative Level
-25		:	TP3 Negative Level
-12		:	TP1 Positive Level
+0		:	TP3 Baseline High Level
+5		:	TP1 Positive Level
 0		:	TP2 Positive Level
 0		:	TP3 Positive Level
-200000000		:	Accumulator High Level
-233600		:	Beam High Level
+0		:	TP1 Negative Level
+4		:	TP2 Negative Level
+19		:	TP3 Negative Level
+9000000		:	Accumulator High Level
+240000		:	Beam High Level
 -100		:	Beam Baseline Low Level
 0		:	Beam Baseline High Level
-14600		:	Beam Charge Calibration
+16500		:	Beam Charge Calibration
 0		:	Accumulation Qmin
 100		:	Accumulator Length
--1344593807		:	File CRC Value
+244386535		:	File CRC Value

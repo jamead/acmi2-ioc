@@ -17,14 +17,10 @@ cd "${TOP}"
 
 ## Register all support components
 dbLoadDatabase "dbd/acmi2.dbd"
+dbLoadDatabase "dbd/acmi2Subs.dbd"
+
 acmi2_registerRecordDeviceDriver pdbbase
 
-## Load record instances for PSC1
-dbLoadRecords("db/lstats.db", "P=$(IOCNAME), NO=A")
-dbLoadRecords("db/control.db", "P=$(IOCNAME), NO=A")
-dbLoadRecords("db/pulse_stats.db", "P=$(IOCNAME), NO=A")
-dbLoadRecords("db/eeprom.db", "P=$(IOCNAME), NO=A")
-dbLoadRecords("db/adc_data.db", "P=$(IOCNAME), NO=A")
 ## Non-PSC database files:
 dbLoadRecords("db/ADC.db", "P=$(IOCNAME), NO=A")
 dbLoadRecords("db/TP.db", "P=$(IOCNAME), NO=A, T=1")
@@ -32,7 +28,14 @@ dbLoadRecords("db/TP.db", "P=$(IOCNAME), NO=A, T=2")
 dbLoadRecords("db/TP.db", "P=$(IOCNAME), NO=A, T=3")
 dbLoadRecords("db/Beam.db", "P=$(IOCNAME), NO=A")
 
-var(PSCDebug, 5)	#5 full debug
+## Load record instances for PSC1
+dbLoadRecords("db/lstats.db", "P=$(IOCNAME), NO=A")
+dbLoadRecords("db/control.db", "P=$(IOCNAME), NO=A")
+dbLoadRecords("db/pulse_stats.db", "P=$(IOCNAME), NO=A")
+dbLoadRecords("db/eeprom.db", "P=$(IOCNAME), NO=A")
+dbLoadRecords("db/adc_data.db", "P=$(IOCNAME), NO=A")
+
+var(PSCDebug, 1)	#5 full debug
 
 #psc1 Create the PSC
 createPSC("PSCA", $(ACMI2_IP), 3000, 0)
@@ -48,3 +51,4 @@ epicsThreadSleep(1.0)
 
 dbpf lab{ACMI:A}EVR:TrigNo-SP 32
 dbpf lab{ACMI:A}EVR:TrigDly-SP 1
+dbpf lab{ACMI:A}Settings:File-SP /home/diag/acmi2/settings/settings.txt

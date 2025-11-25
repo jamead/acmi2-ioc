@@ -16,7 +16,7 @@
 
 int ADCsub(aSubRecord *precord) {
     printf("Hello from ADCSub....\n");
-    int i,indx1,indx2,indx3,indxb,TP1[72],TP2[72],TP3[72],BM[72];
+    int i,indx1,indx2,indx3,indxb,TP1[92],TP2[92],TP3[92],BM[92];
     int BLsum[4]={0},BL[4],pos1,pos2,pos3,neg1,neg2,neg3;
     int INTG[4]={0},PEAK[4]={0},FWHM[4],INDX[4]={0},faults;
     int FWLO[4]={0},FWHI[4]={0};
@@ -50,7 +50,7 @@ int ADCsub(aSubRecord *precord) {
     ts = *localtime(&trigTime);
     strftime(tmstr,sizeof(tmstr), "%a %d %b %Y %H:%M:%S %Z", &ts);
 
-    for(i=0;i<72;i++){
+    for(i=0;i<92;i++){
         TP1[i] = ((pos1>0)-(neg1>0))*Adc[indx1+i];
         TP2[i] = ((pos2>0)-(neg2>0))*Adc[indx2+i];
         TP3[i] = ((pos3>0)-(neg3>0))*Adc[indx3+i];
@@ -68,12 +68,12 @@ int ADCsub(aSubRecord *precord) {
     BL[3] = round((float)BLsum[3]/32.0);
 //    printf("BLsum[3]=%d\n",BLsum[3]);
 
-    memcpy((int *)precord->vala,TP1,72*sizeof(int));
-    memcpy((int *)precord->valb,TP2,72*sizeof(int));
-    memcpy((int *)precord->valc,TP3,72*sizeof(int));
-    memcpy((int *)precord->valq,BM,72*sizeof(int));
+    memcpy((int *)precord->vala,TP1,92*sizeof(int));
+    memcpy((int *)precord->valb,TP2,92*sizeof(int));
+    memcpy((int *)precord->valc,TP3,92*sizeof(int));
+    memcpy((int *)precord->valq,BM,92*sizeof(int));
 
-    for(i=32;i<72;i++){
+    for(i=32;i<92;i++){
         INTG[0] = INTG[0] + TP1[i] - BL[0];
         if(TP1[i]>PEAK[0]){
             PEAK[0] = TP1[i];
@@ -104,7 +104,7 @@ int ADCsub(aSubRecord *precord) {
     PEAK[3] = PEAK[3] - BL[3];
     INDX[3] = INDX[3] + indxb;
 
-    for(i=32;i<72;i++){
+    for(i=32;i<92;i++){
         if(FWLO[0]==0 && TP1[i]>(PEAK[0]/2)) FWLO[0] = i;
         if(FWLO[0]>0 && FWHI[0]==0 && TP1[i]<(PEAK[0]/2)) FWHI[0] = i;
         if(FWLO[1]==0 && TP2[i]>(PEAK[1]/2)) FWLO[1] = i;
@@ -148,7 +148,7 @@ int ADCsub(aSubRecord *precord) {
     STATB[4] = (float)BL[3];
     STATB[5] = STATB[0]/qcal;
 
-//    printf("%s  %d\n",tmstr,strlen(tmstr));
+    printf("%s  %d\n",tmstr,strlen(tmstr));
     precord->nevm = strlen(tmstr);
     memcpy((float *)precord->valg,STAT1,12*sizeof(float));
     memcpy((float *)precord->valh,STAT2,12*sizeof(float));
@@ -158,19 +158,19 @@ int ADCsub(aSubRecord *precord) {
 
 // If a TP1 FAULT occurred on this trigger then update the TP1 Fault PVs...
     if((faults&0x0000FF)>0){
-        memcpy((int *)precord->vald,TP1,72*sizeof(int));
+        memcpy((int *)precord->vald,TP1,92*sizeof(int));
         memcpy((float *)precord->valj,STAT1,12*sizeof(float));
         memcpy((char *)precord->valn,tmstr,strlen(tmstr)*sizeof(char));
     }
 // If a TP2 FAULT occurred on this trigger then update the TP2 Fault PVs...
     if((faults&0x00FF00)>0){
-        memcpy((int *)precord->vale,TP2,72*sizeof(int));
+        memcpy((int *)precord->vale,TP2,92*sizeof(int));
         memcpy((float *)precord->valk,STAT2,12*sizeof(float));
         memcpy((char *)precord->valo,tmstr,strlen(tmstr)*sizeof(char));
     }
 // If a TP3 FAULT occurred on this trigger then update the TP3 Fault PVs...
     if((faults&0xFF0000)>0){
-        memcpy((int *)precord->valf,TP3,72*sizeof(int));
+        memcpy((int *)precord->valf,TP3,92*sizeof(int));
         memcpy((float *)precord->vall,STAT3,12*sizeof(float));
         memcpy((char *)precord->valp,tmstr,strlen(tmstr)*sizeof(char));
     }

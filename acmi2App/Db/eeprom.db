@@ -1035,7 +1035,11 @@ record(aSub,"$(P){ACMI:$(NO)}WriteFile-Sub"){
 record(aSub,"$(P){ACMI:$(NO)}LoadFile-Sub"){
     field(SNAM,"LoadFileSub")
     field(FLNK,"$(P){ACMI:$(NO)}TP1write-Sub.PROC")
-
+    
+    field(FTA,  "CHAR")
+    field(NOA,  "128")
+    field(INPA, "$(P){ACMI:$(NO)}Settings:File-SP")
+    
     field(FTVA,  "LONG")
     field(NOVA,  "13")
     field(OUTA, "$(P){ACMI:$(NO)}EE:TP1-Wfm PP")
@@ -1051,6 +1055,9 @@ record(aSub,"$(P){ACMI:$(NO)}LoadFile-Sub"){
     field(FTVE,  "LONG")
     field(NOVE,  "1")
     field(OUTE, "$(P){ACMI:$(NO)}EE:load-SP PP")
+    field(FTVF,  "LONG")
+    field(NOVF,  "1")
+    field(OUTF, "$(P){ACMI:$(NO)}File:Status-I PP")    
 }
 
 record(aSub,"$(P){ACMI:$(NO)}TP1write-Sub"){
