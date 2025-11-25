@@ -1,5 +1,5 @@
 1234567		:	Settings Header
-4000		:	TP1 Pulse Delay
+4003		:	TP1 Pulse Delay
 5		:	TP1 Pulse Width
 4075		:	TP1 ADC Delay
 6000		:	TP2 Pulse Delay
@@ -10,12 +10,12 @@
 8075		:	TP3 ADC Delay
 1067		:	Beam ADC Delay
 600		:	COW Threshold
-18000		:	TP1 Integral Low Level
-15500		:	TP1 Integral High Level
-18400		:	TP2 Integral Low Level
-16400		:	TP2 Integral High Level
-275000		:	TP3 Integral Low Level
-271000		:	TP3 Integral High Level
+15500		:	TP1 Integral Low Level
+18000		:	TP1 Integral High Level
+16400		:	TP2 Integral Low Level
+18400		:	TP2 Integral High Level
+271000		:	TP3 Integral Low Level
+275000		:	TP3 Integral High Level
 1800		:	TP1 Peak Low Level
 2200		:	TP1 Peak High Level
 1800		:	TP2 Peak Low Level
@@ -47,4 +47,4 @@
 16500		:	Beam Charge Calibration
 0		:	Accumulation Qmin
 100		:	Accumulator Length
-244386535		:	File CRC Value
+916425228		:	File CRC Value
